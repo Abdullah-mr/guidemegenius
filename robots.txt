@@ -1,0 +1,7 @@
+# GuideMeGenius — robots.txt
+# Allows all search engines to crawl the site.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://guidemegenius.com/sitemap.xml

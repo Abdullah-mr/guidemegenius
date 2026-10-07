@@ -27,7 +27,8 @@
 <meta name="twitter:image" content="https://yourdomain.com/images/og-cover.jpg" />
 
 <!-- ============ FAVICON ============ -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%92%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+<link rel="icon" type="image/png" href="images/logo.png" />
+<link rel="apple-touch-icon" href="images/logo.png" />
 
 <!-- ============ FONTS (lightweight) ============ -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -105,9 +106,8 @@
 <header class="site-header">
   <div class="container nav-wrap">
     <a href="#hero" class="logo" aria-label="GuideMeGenius Home">
-      <span class="logo-mark">✒</span>
-      <span class="logo-text">GuideMe<strong>Genius</strong></span>
-    </a>
+  <img src="images/logo.png" alt="GuideMeGenius — Academic Help Services" class="logo-img" />
+</a>
     <nav aria-label="Main navigation">
       <ul class="nav-links">
         <li><a href="#why">Why Us</a></li>
@@ -203,39 +203,140 @@
 </section>
 
 <!-- ============ SAMPLES ============ -->
+<!-- ============ RECENT PROJECTS ============ -->
 <section id="samples" class="section alt">
   <div class="container">
     <header class="section-head reveal">
-      <h2>Sample Works &amp; Grades</h2>
-      <p>Real work from every subject area we cover — swap these placeholders with your screenshots.</p>
+      <h2>Recent Projects — 2025</h2>
+      <p>A snapshot of the assignments and engineering projects we've successfully completed this year.</p>
     </header>
 
-    <div class="grid grid-3">
-      <!-- Replace each src with your real sample image -->
-      <figure class="sample reveal">
-        <img src="images/sample-electrical.jpg" alt="Electrical engineering MATLAB Simulink assignment sample with grade A" loading="lazy" />
-        <figcaption><span class="grade">A</span> Electrical Engineering — MATLAB Simulink</figcaption>
-      </figure>
-      <figure class="sample reveal">
-        <img src="images/sample-mechanical.jpg" alt="Mechanical engineering SolidWorks assignment sample with grade A-" loading="lazy" />
-        <figcaption><span class="grade">A-</span> Mechanical — SolidWorks / Creo</figcaption>
-      </figure>
-      <figure class="sample reveal">
-        <img src="images/sample-cyber.jpg" alt="Cyber security networking assignment sample with grade B+" loading="lazy" />
-        <figcaption><span class="grade">B+</span> Cyber Security &amp; Networking</figcaption>
-      </figure>
-      <figure class="sample reveal">
-        <img src="images/sample-stats.jpg" alt="Statistics SPSS assignment sample with grade A" loading="lazy" />
-        <figcaption><span class="grade">A</span> Statistics — SPSS / R / STATA</figcaption>
-      </figure>
-      <figure class="sample reveal">
-        <img src="images/sample-nursing.jpg" alt="Nursing and public health assignment sample with grade A" loading="lazy" />
-        <figcaption><span class="grade">A</span> Nursing &amp; Public Health</figcaption>
-      </figure>
-      <figure class="sample reveal">
-        <img src="images/sample-research.jpg" alt="Research and report writing assignment sample with grade A-" loading="lazy" />
-        <figcaption><span class="grade">A-</span> Research &amp; Report Writing</figcaption>
-      </figure>
+    <!-- Filter tabs -->
+    <div class="project-tabs reveal" role="tablist" aria-label="Filter projects by field">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="engineering">Engineering</button>
+      <button class="tab" data-filter="software">Software &amp; IT</button>
+      <button class="tab" data-filter="stats">Statistics</button>
+      <button class="tab" data-filter="health">Health Sciences</button>
+      <button class="tab" data-filter="science">Science</button>
+    </div>
+
+    <div class="grid grid-3 project-grid">
+
+      <!-- 1. Simple ALU — Signed -->
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Electrical Engineering</span>
+        <h3>Simple ALU — Signed 8-bit Adder with Hardware Implementation</h3>
+        <p>Designed and implemented an 8-bit signed ALU in VHDL supporting multiple arithmetic operations (X, X+1, X−1, X±Y, Y−X) with overflow and negative detection. Full top-level design verified in ModelSim and demoed on the DE1 board.</p>
+        <div class="tags">
+          <span>VHDL</span><span>Quartus</span><span>ModelSim</span><span>DE1 Board</span>
+        </div>
+        <a href="projects.html" class="read-more">Read More →</a>
+      </article>
+
+      <!-- 2. Simple ALU — Unsigned -->
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Electrical Engineering</span>
+        <h3>Simple ALU — Unsigned 8-bit Adder (VHDL)</h3>
+        <p>Implemented an unsigned 8-bit ALU supporting X, X+1, X−1 and X+Y operations with BCD conversion and 7-segment display output. Includes structural design with Ripple-Carry/CLA adders and full simulation.</p>
+        <div class="tags">
+          <span>VHDL</span><span>Quartus</span><span>BCD</span><span>ModelSim</span>
+        </div>
+        <a href="projects.html" class="read-more">Read More →</a>
+      </article>
+
+      <!-- 3. Social Media A/B Test -->
+      <article class="project-card reveal" data-category="stats">
+        <span class="field-badge stats">Statistics</span>
+        <h3>Social Media Engagement — A/B Retention Analysis</h3>
+        <p>Analyzed 90,189 users across two posting models to test 7-day retention improvement. Used two-proportion z-tests, chi-square tests, and likelihood-ratio models — presented with APA-style visuals and business recommendations.</p>
+        <div class="tags">
+          <span>R</span><span>Hypothesis Testing</span><span>A/B Testing</span><span>APA</span>
+        </div>
+        <a href="projects.html" class="read-more">Read More →</a>
+      </article>
+
+      <!-- 4. AWS Storage Management -->
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Cloud &amp; DevOps</span>
+        <h3>AWS Storage Management — S3, EBS &amp; IAM Automation</h3>
+        <p>Built a full AWS storage lab: created S3 buckets with versioning, attached IAM roles to EC2, automated EBS snapshot rotation with a cron-scheduled Python script, and demonstrated file recovery through S3 version history.</p>
+        <div class="tags">
+          <span>AWS S3</span><span>EBS</span><span>IAM</span><span>Python</span><span>AWS CLI</span>
+        </div>
+        <a href="projects.html" class="read-more">Read More →</a>
+      </article>
+
+      <!-- 5. Public Health — Vaccination -->
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Public Health</span>
+        <h3>Communication &amp; Conflict Resolution in Childhood Vaccination</h3>
+        <p>Applied the Ecological Framework for Health Communication to a community public health conflict involving parents, schools, and health departments. Proposed interest-based negotiation, mediation, and culturally responsive strategies.</p>
+        <div class="tags">
+          <span>APA 7</span><span>Public Health</span><span>Health Communication</span>
+        </div>
+        <a href="projects.html" class="read-more">Read More →</a>
+      </article>
+
+      <!-- 6. Rabies Epidemiology -->
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Medicine &amp; Epidemiology</span>
+        <h3>Rabies — Epidemiology, Clinical Features &amp; Public Health Control</h3>
+        <p>Comprehensive epidemiological review of rabies (Lyssavirus) covering transmission, symptomology, PEP protocols, environmental determinants, distribution, and global health disparities — with One Health control recommendations.</p>
+        <div class="tags">
+          <span>Epidemiology</span><span>WHO</span><span>PHAC</span><span>One Health</span>
+        </div>
+        <a href="projects.html" class="read-more">Read More →</a>
+      </article>
+
+      <!-- 7. UK Hospital Risk Allocation -->
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Construction Management</span>
+        <h3>Risk Allocation — UK Hospital Development Case Study</h3>
+        <p>Critically evaluated design and cost risk allocation under General Contracting vs Design &amp; Build procurement routes, using the Royal Liverpool University Hospital case and Carillion collapse as analytical anchors.</p>
+        <div class="tags">
+          <span>Procurement</span><span>Risk Analysis</span><span>Case Study</span>
+        </div>
+        <a href="projects.html" class="read-more">Read More →</a>
+      </article>
+
+      <!-- 8. IMFs in Food Industry -->
+      <article class="project-card reveal" data-category="science">
+        <span class="field-badge science">Chemistry</span>
+        <h3>Intermolecular Forces &amp; Applications in the Food Industry</h3>
+        <p>Explained how IMFs (London dispersion, dipole-dipole, hydrogen bonding) govern solubility, melting/boiling points, and fats &amp; oils behavior. Applied concepts to real food-industry examples like emulsified dressings and hydrogenated fats.</p>
+        <div class="tags">
+          <span>SCH4U</span><span>Chemistry</span><span>APA</span>
+        </div>
+        <a href="projects.html" class="read-more">Read More →</a>
+      </article>
+
+      <!-- 9. NIOS II Processor -->
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Embedded Systems</span>
+        <h3>NIOS II Soft Processor on Cyclone V FPGA (DE1-SoC)</h3>
+        <p>Built a complete NIOS II system in Platform Designer with on-chip RAM and JTAG UART, compiled in Quartus Prime, assigned board pins, and ran a Hello World C program on hardware via Eclipse SBT.</p>
+        <div class="tags">
+          <span>Platform Designer</span><span>Quartus</span><span>Eclipse</span><span>FPGA</span>
+        </div>
+        <a href="projects.html" class="read-more">Read More →</a>
+      </article>
+
+      <!-- 10. VGA Controller -->
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Embedded Systems</span>
+        <h3>VGA Display Controller on DE1-SoC (1280×1024 @ 60 Hz)</h3>
+        <p>Designed a VGA controller with PLL-generated 108 MHz pixel clock, VESA-compliant HSYNC/VSYNC timing, and switch-controlled movable color squares. Verified live on hardware through ADV7123 DAC.</p>
+        <div class="tags">
+          <span>VHDL</span><span>PLL</span><span>Quartus Prime</span><span>DE1-SoC</span>
+        </div>
+        <a href="projects.html" class="read-more">Read More →</a>
+      </article>
+
+    </div>
+
+    <div class="projects-footer reveal">
+      <a href="projects.html" class="btn btn-primary">View All Completed Projects →</a>
     </div>
   </div>
 </section>
@@ -328,18 +429,104 @@
     </header>
 
     <div class="grid grid-3">
-      <!-- Replace with screenshots of your Freelancer.com reviews -->
-      <figure class="review reveal">
-        <img src="images/review-1.jpg" alt="Freelancer.com review screenshot — 5 star rating" loading="lazy" />
-      </figure>
-      <figure class="review reveal">
-        <img src="images/review-2.jpg" alt="Freelancer.com review screenshot — 5 star rating" loading="lazy" />
-      </figure>
-      <figure class="review reveal">
-        <img src="images/review-3.jpg" alt="Freelancer.com review screenshot — 5 star rating" loading="lazy" />
-      </figure>
+
+  <article class="review-card reveal">
+    <div class="review-head">
+      <div class="avatar">A</div>
+      <div>
+        <h4>Aurélien <span class="flag">🇫🇷</span></h4>
+        <div class="stars">★★★★★ <span class="rating">5.0</span></div>
+      </div>
+      <div class="review-meta">€20 EUR<br><small>3 years ago</small></div>
     </div>
-  </div>
+    <h5 class="project">Arduino-Based GSM Home Automation System</h5>
+    <p>"Very efficient and pleasant to work with. I definitely recommend!"</p>
+    <div class="tags">
+      <span>C Programming</span><span>Electronics</span><span>Arduino</span>
+    </div>
+  </article>
+
+  <article class="review-card reveal">
+    <div class="review-head">
+      <div class="avatar">L</div>
+      <div>
+        <h4>Labo <span class="flag">🇵🇹</span></h4>
+        <div class="stars">★★★★★ <span class="rating">5.0</span></div>
+      </div>
+      <div class="review-meta">$4 USD<br><small>3 years ago</small></div>
+    </div>
+    <h5 class="project">Circuit Problem Resolution Needed</h5>
+    <p>"Excellent, accurate, straight forward and a very experienced engineer!"</p>
+    <div class="tags">
+      <span>Engineering</span><span>Electronics</span><span>Circuit Design</span>
+    </div>
+  </article>
+
+  <article class="review-card reveal">
+    <div class="review-head">
+      <div class="avatar">R</div>
+      <div>
+        <h4>Former Client</h4>
+        <div class="stars">★★★★★ <span class="rating">5.0</span></div>
+      </div>
+      <div class="review-meta">$16 USD<br><small>6 years ago</small></div>
+    </div>
+    <h5 class="project">MATLAB Error Code</h5>
+    <p>"Very good! And professional!"</p>
+    <div class="tags">
+      <span>MATLAB</span><span>Algorithm</span><span>Electrical Eng.</span>
+    </div>
+  </article>
+
+  <article class="review-card reveal">
+    <div class="review-head">
+      <div class="avatar">T</div>
+      <div>
+        <h4>Former Client</h4>
+        <div class="stars">★★★★★ <span class="rating">5.0</span></div>
+      </div>
+      <div class="review-meta">$71 USD<br><small>6 years ago</small></div>
+    </div>
+    <h5 class="project">C# Expert Needed</h5>
+    <p>"He is on point, knowledgeable and punctual — one package. I will use him again for my main project again."</p>
+    <div class="tags">
+      <span>C#</span><span>.NET</span><span>Programming</span>
+    </div>
+  </article>
+
+  <article class="review-card reveal">
+    <div class="review-head">
+      <div class="avatar">A</div>
+      <div>
+        <h4>Azmat <span class="flag">🇵🇰</span></h4>
+        <div class="stars">★★★★★ <span class="rating">5.0</span></div>
+      </div>
+      <div class="review-meta">$25 USD<br><small>6 years ago</small></div>
+    </div>
+    <h5 class="project">Java OOP Project</h5>
+    <p>"Exceptional work on short notice. A+++ and recommended."</p>
+    <div class="tags">
+      <span>Java</span><span>NetBeans</span><span>OOP</span>
+    </div>
+  </article>
+
+  <article class="review-card reveal">
+    <div class="review-head">
+      <div class="avatar">A</div>
+      <div>
+        <h4>Abdul Majeed <span class="flag">🇳🇿</span></h4>
+        <div class="stars">★★★★★ <span class="rating">5.0</span></div>
+      </div>
+      <div class="review-meta">$30 NZD<br><small>6 years ago</small></div>
+    </div>
+    <h5 class="project">Electrical and Electronic Project</h5>
+    <p>"Mohamed has got very exceptional skills. He delivered time-sensitive project on time. He is very professional and polite. I will hire him again. Highly recommended."</p>
+    <div class="tags">
+      <span>Electrical</span><span>Electronics</span><span>Project</span>
+    </div>
+  </article>
+
+</div>
 </section>
 
 <!-- ============ CONTACT ============ -->

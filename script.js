@@ -63,3 +63,30 @@ if (form) {
 // ---- 3. Auto-update Footer Year ----
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+// ---- 4. Project Filter Tabs ----
+document.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelectorAll('.project-tabs .tab');
+  const cards = document.querySelectorAll('.project-card');
+
+  if (!tabs.length || !cards.length) return;
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const filter = tab.dataset.filter;
+
+      tabs.forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      cards.forEach((card) => {
+        const match = filter === 'all' || card.dataset.category === filter;
+        card.classList.toggle('is-hidden', !match);
+
+        // re-trigger reveal animation
+        if (match) {
+          card.classList.remove('visible');
+          requestAnimationFrame(() => card.classList.add('visible'));
+        }
+      });
+    });
+  });
+});

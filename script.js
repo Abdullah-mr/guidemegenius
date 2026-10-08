@@ -1,6 +1,6 @@
 /* =========================================================
-   ASSIGNMENT EXPERTS — script.js
-   Handles: scroll reveal, WhatsApp form, footer year
+   GUIDEMEGENIUS — script.js
+   Handles: scroll reveal, WhatsApp form, footer year, filters
    ========================================================= */
 
 // ---- 1. Scroll Reveal Animation ----
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // animate once
+        observer.unobserve(entry.target);
       }
     });
   }, {
@@ -36,13 +36,11 @@ if (form) {
     const deadline = (data.get('deadline') || '').trim();
     const details  = (data.get('details') || '').trim();
 
-    // Basic validation
     if (!name || !email || !subject || !details) {
       alert('Please fill in all required fields.');
       return;
     }
 
-    // Build WhatsApp message
     const message =
       `*New Assignment Quote Request*%0A%0A` +
       `*Name:* ${encodeURIComponent(name)}%0A` +
@@ -51,8 +49,7 @@ if (form) {
       `*Deadline:* ${encodeURIComponent(deadline || 'Not specified')}%0A%0A` +
       `*Details:*%0A${encodeURIComponent(details)}`;
 
-    // Your WhatsApp number (country code + number, no + or spaces)
-    const phone = '9477552388';
+    const phone = '94775522388';
     const url = `https://wa.me/${phone}?text=${message}`;
 
     window.open(url, '_blank');
@@ -63,6 +60,7 @@ if (form) {
 // ---- 3. Auto-update Footer Year ----
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
 // ---- 4. Project + Service Filter Tabs ----
 document.addEventListener('DOMContentLoaded', () => {
   // Projects filter
@@ -87,51 +85,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Services filter — only the tabs inside the services section
+  // Services filter — only tabs inside the services section
   const servicesSection = document.querySelector('#services');
-  if (!servicesSection) return;
+  if (servicesSection) {
+    const serviceTabs = servicesSection.querySelectorAll('.project-tabs .tab');
+    const serviceCards = servicesSection.querySelectorAll('.service-card');
 
-  const serviceTabs = servicesSection.querySelectorAll('.project-tabs .tab');
-  const serviceCards = servicesSection.querySelectorAll('.service-card');
+    serviceTabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const filter = tab.dataset.filter;
 
-  serviceTabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-      const filter = tab.dataset.filter;
+        serviceTabs.forEach((t) => t.classList.remove('active'));
+        tab.classList.add('active');
 
-      serviceTabs.forEach((t) => t.classList.remove('active'));
-      tab.classList.add('active');
-
-      serviceCards.forEach((card) => {
-        const match = filter === 'all' || card.dataset.category === filter;
-        card.classList.toggle('is-hidden', !match);
-        if (match) {
-          card.classList.remove('visible');
-          requestAnimationFrame(() => card.classList.add('visible'));
-        }
+        serviceCards.forEach((card) => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.classList.toggle('is-hidden', !match);
+          if (match) {
+            card.classList.remove('visible');
+            requestAnimationFrame(() => card.classList.add('visible'));
+          }
+        });
       });
     });
-  });
-});
-
-  if (!tabs.length || !cards.length) return;
-
-  tabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-      const filter = tab.dataset.filter;
-
-      tabs.forEach((t) => t.classList.remove('active'));
-      tab.classList.add('active');
-
-      cards.forEach((card) => {
-        const match = filter === 'all' || card.dataset.category === filter;
-        card.classList.toggle('is-hidden', !match);
-
-        // re-trigger reveal animation
-        if (match) {
-          card.classList.remove('visible');
-          requestAnimationFrame(() => card.classList.add('visible'));
-        }
-      });
-    });
-  });
+  }
 });

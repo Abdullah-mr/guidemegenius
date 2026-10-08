@@ -22,38 +22,52 @@ document.addEventListener('DOMContentLoaded', () => {
   revealEls.forEach((el) => observer.observe(el));
 });
 
-// ---- 2. Contact Form -> WhatsApp ----
+// ---- 2. Contact Form -> Formspree ----
 const form = document.getElementById('quoteForm');
 
 if (form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const data = new FormData(form);
-    const name     = (data.get('name') || '').trim();
-    const email    = (data.get('email') || '').trim();
-    const subject  = (data.get('subject') || '').trim();
-    const deadline = (data.get('deadline') || '').trim();
-    const details  = (data.get('details') || '').trim();
+    const name = (data.get('name') || '').trim();
+    const email = (data.get('email') || '').trim();
+    const subject = (data.get('subject') || '').trim();
+    const details = (data.get('details') || '').trim();
 
+    // Basic validation
     if (!name || !email || !subject || !details) {
       alert('Please fill in all required fields.');
       return;
     }
 
-    const message =
-      `*New Assignment Quote Request*%0A%0A` +
-      `*Name:* ${encodeURIComponent(name)}%0A` +
-      `*Email:* ${encodeURIComponent(email)}%0A` +
-      `*Subject:* ${encodeURIComponent(subject)}%0A` +
-      `*Deadline:* ${encodeURIComponent(deadline || 'Not specified')}%0A%0A` +
-      `*Details:*%0A${encodeURIComponent(details)}`;
+    const button = form.querySelector('button[type="submit"]');
+    const originalText = button.textContent;
+    button.textContent = 'Sending...';
+    button.disabled = true;
 
-    const phone = '94775522388';
-    const url = `https://wa.me/${phone}?text=${message}`;
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
 
-    window.open(url, '_blank');
-    form.reset();
+      if (response.ok) {
+        form.reset();
+        alert('Thank you! Your request has been sent. We\'ll reply within a few hours.');
+      } else {
+        const json = await response.json();
+        alert('Something went wrong. Please try again or contact us on WhatsApp.');
+        console.error(json);
+      }
+    } catch (err) {
+      alert('Network error. Please try again or contact us on WhatsApp.');
+      console.error(err);
+    } finally {
+      button.textContent = originalText;
+      button.disabled = false;
+    }
   });
 }
 

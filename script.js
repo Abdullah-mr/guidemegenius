@@ -22,54 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
   revealEls.forEach((el) => observer.observe(el));
 });
 
-// ---- 2. Contact Form -> Formspree ----
-const form = document.getElementById('quoteForm');
-
-if (form) {
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const data = new FormData(form);
-    const name = (data.get('name') || '').trim();
-    const email = (data.get('email') || '').trim();
-    const subject = (data.get('subject') || '').trim();
-    const details = (data.get('details') || '').trim();
-
-    // Basic validation
-    if (!name || !email || !subject || !details) {
-      alert('Please fill in all required fields.');
-      return;
-    }
-
-    const button = form.querySelector('button[type="submit"]');
-    const originalText = button.textContent;
-    button.textContent = 'Sending...';
-    button.disabled = true;
-
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        form.reset();
-        alert('Thank you! Your request has been sent. We\'ll reply within a few hours.');
-      } else {
-        const json = await response.json();
-        alert('Something went wrong. Please try again or contact us on WhatsApp.');
-        console.error(json);
-      }
-    } catch (err) {
-      alert('Network error. Please try again or contact us on WhatsApp.');
-      console.error(err);
-    } finally {
-      button.textContent = originalText;
-      button.disabled = false;
-    }
-  });
-}
+// ---- 2. Contact Form (native Formspree submission, no JS interception) ----
+// Form is submitted directly by the browser via the action="..." attribute in HTML.
+// No JS needed — Formspree free plan requires native submission.
 
 // ---- 3. Auto-update Footer Year ----
 const yearEl = document.getElementById('year');

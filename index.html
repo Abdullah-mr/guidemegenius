@@ -36,8 +36,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 
 <!-- ============ STYLES ============ -->
-<link rel="stylesheet" href="styles.css" />
-
+<link rel="stylesheet" href="styles.css?v=5" />
 <!-- ============ JSON-LD SCHEMA (Rich Results) ============ -->
 <script type="application/ld+json">
 {
@@ -203,144 +202,143 @@
 </section>
 
 <!-- ============ SAMPLES ============ -->
-<!-- ============ RECENT PROJECTS ============ -->
+<!-- ============ FEATURED PROJECTS ============ -->
 <section id="samples" class="section alt">
   <div class="container">
     <header class="section-head reveal">
-      <h2>Recent Projects — 2025</h2>
-      <p>A snapshot of the assignments and engineering projects we've successfully completed this year.</p>
+      <h2>Featured <span class="accent">Projects</span></h2>
+      <p>A hand-picked selection from our 120+ successfully completed projects across engineering, software, IT, health, statistics, and research.</p>
     </header>
-
-    <!-- Filter tabs -->
-    <div class="project-tabs reveal" role="tablist" aria-label="Filter projects by field">
-      <button class="tab active" data-filter="all">All</button>
-      <button class="tab" data-filter="engineering">Engineering</button>
-      <button class="tab" data-filter="software">Software &amp; IT</button>
-      <button class="tab" data-filter="stats">Statistics</button>
-      <button class="tab" data-filter="health">Health Sciences</button>
-      <button class="tab" data-filter="science">Science</button>
-    </div>
 
     <div class="grid grid-3 project-grid">
 
-      <!-- 1. Simple ALU — Signed -->
+      <!-- 1. Simple ALU -->
       <article class="project-card reveal" data-category="engineering">
         <span class="field-badge engineering">Electrical Engineering</span>
-        <h3>Simple ALU — Signed 8-bit Adder with Hardware Implementation</h3>
-        <p>Designed and implemented an 8-bit signed ALU in VHDL supporting multiple arithmetic operations (X, X+1, X−1, X±Y, Y−X) with overflow and negative detection. Full top-level design verified in ModelSim and demoed on the DE1 board.</p>
+        <h3>Simple ALU — Signed &amp; Unsigned 8-bit Adder (VHDL)</h3>
+        <p>Designed a dual-mode 8-bit ALU in VHDL supporting X, X+1, X−1, X±Y, and Y−X operations with overflow, negative detection, and BCD conversion. Verified in ModelSim and demoed on the DE1 FPGA board.</p>
         <div class="tags">
-          <span>VHDL</span><span>Quartus</span><span>ModelSim</span><span>DE1 Board</span>
+          <span>VHDL</span><span>Quartus</span><span>ModelSim</span><span>FPGA</span>
         </div>
-        <a href="projects.html" class="read-more">Read More →</a>
       </article>
 
-      <!-- 2. Simple ALU — Unsigned -->
+      <!-- 2. VGA Controller -->
       <article class="project-card reveal" data-category="engineering">
-        <span class="field-badge engineering">Electrical Engineering</span>
-        <h3>Simple ALU — Unsigned 8-bit Adder (VHDL)</h3>
-        <p>Implemented an unsigned 8-bit ALU supporting X, X+1, X−1 and X+Y operations with BCD conversion and 7-segment display output. Includes structural design with Ripple-Carry/CLA adders and full simulation.</p>
+        <span class="field-badge engineering">Embedded Systems</span>
+        <h3>VGA Display Controller on DE1-SoC (1280×1024 @ 60 Hz)</h3>
+        <p>Designed and verified a full VGA controller with a PLL-generated 108 MHz pixel clock, VESA-compliant HSYNC/VSYNC timing, and switch-controlled movable color squares. Ran live on hardware via ADV7123 DAC.</p>
         <div class="tags">
-          <span>VHDL</span><span>Quartus</span><span>BCD</span><span>ModelSim</span>
+          <span>VHDL</span><span>PLL</span><span>Quartus Prime</span><span>DE1-SoC</span>
         </div>
-        <a href="projects.html" class="read-more">Read More →</a>
       </article>
 
-      <!-- 3. Social Media A/B Test -->
-      <article class="project-card reveal" data-category="stats">
+      <!-- 3. PV MPPT -->
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Power Electronics</span>
+        <h3>PV Panel Maximum Power Point Tracking — Boost Converter</h3>
+        <p>Simulated a switching boost converter for PV panel MPPT in LTSPICE. Analyzed inductor current ripple, output voltage regulation, switching losses, and efficiency across load conditions.</p>
+        <div class="tags">
+          <span>LTSPICE</span><span>MPPT</span><span>Boost Converter</span>
+        </div>
+      </article>
+
+      <!-- 4. AOU Connect App -->
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Software Engineering</span>
+        <h3>AOU Connect Mobile Application (Flutter FYP)</h3>
+        <p>Full-featured mobile app for Arab Open University — LMS/SIS integration, secure login, bilingual Arabic/English support, real-time notifications, digital university card, and calendar sync. Includes complete UML documentation and testing.</p>
+        <div class="tags">
+          <span>Flutter</span><span>Firebase</span><span>Mobile App</span><span>Agile</span>
+        </div>
+      </article>
+
+      <!-- 5. RISC-V Simulator -->
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Computer Architecture</span>
+        <h3>RISC-V 5-Stage Pipeline Simulator (C++)</h3>
+        <p>Implemented a complete 5-stage pipelined RISC-V processor simulator in C++ with both no-forwarding and forwarding variants. Handles IF/ID/EX/MEM/WB stages with pipeline diagram output.</p>
+        <div class="tags">
+          <span>RISC-V</span><span>C++</span><span>Pipeline</span><span>Computer Architecture</span>
+        </div>
+      </article>
+
+      <!-- 6. AWS -->
+      <article class="project-card reveal" data-category="it">
+        <span class="field-badge software">Cloud &amp; DevOps</span>
+        <h3>AWS Storage Management — S3, EBS &amp; IAM Automation</h3>
+        <p>Built a full AWS storage lab — S3 buckets with versioning, IAM roles on EC2, automated EBS snapshot rotation with a Python cron script, snapshot retention, and file recovery through S3 version history.</p>
+        <div class="tags">
+          <span>AWS S3</span><span>EBS</span><span>IAM</span><span>Python</span>
+        </div>
+      </article>
+
+      <!-- 7. Ransomware -->
+      <article class="project-card reveal" data-category="it">
+        <span class="field-badge software">Cyber Security</span>
+        <h3>Corporate Network — Ransomware Attack &amp; Defense Plan</h3>
+        <p>Analyzed ransomware attack vectors on a corporate network, marked vulnerability points, and designed a comprehensive defense strategy — including antivirus, email filtering, backups, and a formal Data Backup &amp; Email Security Policy.</p>
+        <div class="tags">
+          <span>Cyber Security</span><span>Ransomware</span><span>Network Defense</span>
+        </div>
+      </article>
+
+      <!-- 8. Statistics -->
+      <article class="project-card reveal" data-category="data">
         <span class="field-badge stats">Statistics</span>
         <h3>Social Media Engagement — A/B Retention Analysis</h3>
         <p>Analyzed 90,189 users across two posting models to test 7-day retention improvement. Used two-proportion z-tests, chi-square tests, and likelihood-ratio models — presented with APA-style visuals and business recommendations.</p>
         <div class="tags">
-          <span>R</span><span>Hypothesis Testing</span><span>A/B Testing</span><span>APA</span>
+          <span>R</span><span>A/B Testing</span><span>Hypothesis Testing</span><span>APA</span>
         </div>
-        <a href="projects.html" class="read-more">Read More →</a>
       </article>
 
-      <!-- 4. AWS Storage Management -->
-      <article class="project-card reveal" data-category="software">
-        <span class="field-badge software">Cloud &amp; DevOps</span>
-        <h3>AWS Storage Management — S3, EBS &amp; IAM Automation</h3>
-        <p>Built a full AWS storage lab: created S3 buckets with versioning, attached IAM roles to EC2, automated EBS snapshot rotation with a cron-scheduled Python script, and demonstrated file recovery through S3 version history.</p>
-        <div class="tags">
-          <span>AWS S3</span><span>EBS</span><span>IAM</span><span>Python</span><span>AWS CLI</span>
-        </div>
-        <a href="projects.html" class="read-more">Read More →</a>
-      </article>
-
-      <!-- 5. Public Health — Vaccination -->
+      <!-- 9. Myocardial Infarction -->
       <article class="project-card reveal" data-category="health">
-        <span class="field-badge health">Public Health</span>
-        <h3>Communication &amp; Conflict Resolution in Childhood Vaccination</h3>
-        <p>Applied the Ecological Framework for Health Communication to a community public health conflict involving parents, schools, and health departments. Proposed interest-based negotiation, mediation, and culturally responsive strategies.</p>
+        <span class="field-badge health">Cardiology</span>
+        <h3>Myocardial Infarction Case Study</h3>
+        <p>Analyzed NSTEMI with LDL-C driven atherosclerosis, grapefruit–atorvastatin drug interaction, and salt-reduction mechanisms for hypertension — with detailed clinical reasoning and patient recommendations.</p>
         <div class="tags">
-          <span>APA 7</span><span>Public Health</span><span>Health Communication</span>
+          <span>Cardiology</span><span>Atherosclerosis</span><span>Pharmacology</span>
         </div>
-        <a href="projects.html" class="read-more">Read More →</a>
       </article>
 
-      <!-- 6. Rabies Epidemiology -->
-      <article class="project-card reveal" data-category="health">
-        <span class="field-badge health">Medicine &amp; Epidemiology</span>
-        <h3>Rabies — Epidemiology, Clinical Features &amp; Public Health Control</h3>
-        <p>Comprehensive epidemiological review of rabies (Lyssavirus) covering transmission, symptomology, PEP protocols, environmental determinants, distribution, and global health disparities — with One Health control recommendations.</p>
+      <!-- 10. HRM Report -->
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">Human Resource Management</span>
+        <h3>Rewards &amp; Employee Retention — HRM Research Report</h3>
+        <p>Complete research report analyzing 132 responses on rewards and retention at ABC Private Limited. Found that compensation, recognition, supervisor influence, and work-life balance explain 80.1% of variance in retention.</p>
         <div class="tags">
-          <span>Epidemiology</span><span>WHO</span><span>PHAC</span><span>One Health</span>
+          <span>HRM</span><span>SPSS</span><span>Correlation</span><span>Retention</span>
         </div>
-        <a href="projects.html" class="read-more">Read More →</a>
       </article>
 
-      <!-- 7. UK Hospital Risk Allocation -->
+      <!-- 11. UK Hospital -->
       <article class="project-card reveal" data-category="engineering">
         <span class="field-badge engineering">Construction Management</span>
-        <h3>Risk Allocation — UK Hospital Development Case Study</h3>
-        <p>Critically evaluated design and cost risk allocation under General Contracting vs Design &amp; Build procurement routes, using the Royal Liverpool University Hospital case and Carillion collapse as analytical anchors.</p>
+        <h3>UK Hospital Development — Risk Allocation Case Study</h3>
+        <p>Critically evaluated design and cost risk allocation under General Contracting vs. Design &amp; Build procurement routes, using the Royal Liverpool University Hospital and Carillion collapse as analytical anchors.</p>
         <div class="tags">
           <span>Procurement</span><span>Risk Analysis</span><span>Case Study</span>
         </div>
-        <a href="projects.html" class="read-more">Read More →</a>
       </article>
 
-      <!-- 8. IMFs in Food Industry -->
-      <article class="project-card reveal" data-category="science">
-        <span class="field-badge science">Chemistry</span>
-        <h3>Intermolecular Forces &amp; Applications in the Food Industry</h3>
-        <p>Explained how IMFs (London dispersion, dipole-dipole, hydrogen bonding) govern solubility, melting/boiling points, and fats &amp; oils behavior. Applied concepts to real food-industry examples like emulsified dressings and hydrogenated fats.</p>
+      <!-- 12. Racket -->
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Programming Languages</span>
+        <h3>Racket Programming — COMP712 Assignment</h3>
+        <p>Complete Racket assignment covering efficient max-list rewriting, tail-recursive polynomials, higher-order functions (foldr), domino loop generation, custom streams, EBNF grammar for a simple language, and a hand-written lexer.</p>
         <div class="tags">
-          <span>SCH4U</span><span>Chemistry</span><span>APA</span>
+          <span>Racket</span><span>Functional Programming</span><span>Streams</span><span>Lexer</span>
         </div>
-        <a href="projects.html" class="read-more">Read More →</a>
-      </article>
-
-      <!-- 9. NIOS II Processor -->
-      <article class="project-card reveal" data-category="engineering">
-        <span class="field-badge engineering">Embedded Systems</span>
-        <h3>NIOS II Soft Processor on Cyclone V FPGA (DE1-SoC)</h3>
-        <p>Built a complete NIOS II system in Platform Designer with on-chip RAM and JTAG UART, compiled in Quartus Prime, assigned board pins, and ran a Hello World C program on hardware via Eclipse SBT.</p>
-        <div class="tags">
-          <span>Platform Designer</span><span>Quartus</span><span>Eclipse</span><span>FPGA</span>
-        </div>
-        <a href="projects.html" class="read-more">Read More →</a>
-      </article>
-
-      <!-- 10. VGA Controller -->
-      <article class="project-card reveal" data-category="engineering">
-        <span class="field-badge engineering">Embedded Systems</span>
-        <h3>VGA Display Controller on DE1-SoC (1280×1024 @ 60 Hz)</h3>
-        <p>Designed a VGA controller with PLL-generated 108 MHz pixel clock, VESA-compliant HSYNC/VSYNC timing, and switch-controlled movable color squares. Verified live on hardware through ADV7123 DAC.</p>
-        <div class="tags">
-          <span>VHDL</span><span>PLL</span><span>Quartus Prime</span><span>DE1-SoC</span>
-        </div>
-        <a href="projects.html" class="read-more">Read More →</a>
       </article>
 
     </div>
 
     <div class="projects-footer reveal">
-      <a href="projects.html" class="btn btn-primary">View All Completed Projects →</a>
+      <a href="projects.html" class="btn btn-primary">View All 120+ Completed Projects →</a>
     </div>
   </div>
 </section>
-
 <!-- ============ SERVICES ============ -->
 <section id="services" class="section">
   <div class="container">
@@ -734,6 +732,6 @@
   </svg>
 </a>
 
-<script src="script.js?v=4" defer></script>
+<script src="script.js?v=5" defer></script>
 </body>
 </html>

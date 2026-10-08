@@ -3,47 +3,974 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>All Completed Projects | GuideMeGenius</title>
-<meta name="description" content="Browse all 1000+ completed assignments and engineering projects by GuideMeGenius across engineering, statistics, health sciences, and more." />
-<meta name="robots" content="index, follow" />
-<link rel="stylesheet" href="styles.css" />
+<meta name="theme-color" content="#0a2c5c" />
+
+<!-- SEO -->
+<title>All Completed Projects | GuideMeGenius — 120+ Assignments Across Engineering, Health & More</title>
+<meta name="description" content="Browse all 120+ completed projects by GuideMeGenius — engineering, software, cyber security, statistics, nursing, research, and more. Real work from real clients." />
+<meta name="keywords" content="completed projects, engineering projects, programming assignments, statistics assignments, nursing case studies, cyber security projects, VHDL projects, MATLAB projects" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://guidemegenius.com/projects.html" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="All Completed Projects | GuideMeGenius" />
+<meta property="og:description" content="120+ completed projects across engineering, software, health, statistics, and research." />
+<meta property="og:url" content="https://guidemegenius.com/projects.html" />
+<meta property="og:site_name" content="GuideMeGenius" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/logo.png" />
+<link rel="apple-touch-icon" href="images/logo.png" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+<!-- Styles -->
+<link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
+
 <header class="site-header">
   <div class="container nav-wrap">
     <a href="index.html" class="logo" aria-label="GuideMeGenius Home">
-      <span class="logo-mark">✒</span>
-      <span class="logo-text">GuideMe<strong>Genius</strong></span>
+      <img src="images/logo.png" alt="GuideMeGenius — Academic Help Services" class="logo-img" />
     </a>
     <nav aria-label="Main navigation">
       <ul class="nav-links">
-        <li><a href="index.html">← Back to Home</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#why">Why Us</a></li>
+        <li><a href="index.html#services">Services</a></li>
         <li><a href="index.html#contact" class="btn btn-sm">Get a Quote</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<section class="section">
+<!-- HERO -->
+<section class="projects-hero">
   <div class="container">
-    <header class="section-head">
-      <h1>All Completed Projects</h1>
-      <p>We're building this page — it will list 200+ completed assignments across every field. Coming soon.</p>
-    </header>
-    <div style="text-align:center; margin-top: 40px;">
-      <a href="index.html" class="btn btn-primary">← Back to Homepage</a>
-    </div>
+    <span class="badge">📚 120+ Completed Projects</span>
+    <h1>Our Completed Projects</h1>
+    <p class="hero-sub">
+      A showcase of over <strong>120 real projects</strong> we've delivered across engineering,
+      software, cyber security, statistics, health sciences, and research writing —
+      each successfully completed and verified.
+    </p>
+    <a href="index.html#contact" class="btn btn-primary">Get a Free Quote</a>
   </div>
 </section>
 
+<!-- PROJECTS LIBRARY -->
+<section class="section">
+  <div class="container">
+
+    <!-- Filter tabs -->
+    <div class="project-tabs reveal" role="tablist" aria-label="Filter projects by category">
+      <button class="tab active" data-filter="all">All (121)</button>
+      <button class="tab" data-filter="engineering">⚡ Engineering (31)</button>
+      <button class="tab" data-filter="software">💻 Software (22)</button>
+      <button class="tab" data-filter="it">🌐 IT &amp; Security (10)</button>
+      <button class="tab" data-filter="data">📊 Data &amp; Finance (9)</button>
+      <button class="tab" data-filter="health">🩺 Health (20)</button>
+      <button class="tab" data-filter="writing">📝 Writing &amp; Research (17)</button>
+      <button class="tab" data-filter="maths">🔬 Maths &amp; Science (12)</button>
+    </div>
+
+    <div class="grid grid-3 project-grid">
+
+      <!-- ==================== ENGINEERING (31) ==================== -->
+
+      <article class="project-card reveal" data-category="engineering" id="p-alu-signed">
+        <span class="field-badge engineering">Electrical Engineering</span>
+        <h3>Simple ALU — Signed 8-bit Adder (VHDL)</h3>
+        <p>Designed and implemented an 8-bit signed ALU in VHDL supporting multiple arithmetic operations with overflow and negative detection. Verified in ModelSim and demoed on the DE1 FPGA board.</p>
+        <div class="tags"><span>VHDL</span><span>Quartus</span><span>ModelSim</span><span>FPGA</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Electrical Engineering</span>
+        <h3>Simple ALU — Unsigned 8-bit Adder (VHDL)</h3>
+        <p>Implemented an unsigned 8-bit ALU with BCD conversion and 7-segment display output, using structural design with Ripple-Carry and Carry-Lookahead adders.</p>
+        <div class="tags"><span>VHDL</span><span>Quartus</span><span>BCD</span><span>7-Segment</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Embedded Systems</span>
+        <h3>NIOS II Soft Processor on Cyclone V FPGA</h3>
+        <p>Built a complete NIOS II system with on-chip RAM and JTAG UART, configured in Platform Designer and compiled in Quartus Prime. Ran Hello World on hardware via Eclipse SBT.</p>
+        <div class="tags"><span>NIOS II</span><span>FPGA</span><span>Platform Designer</span><span>Embedded C</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Embedded Systems</span>
+        <h3>VGA Display Controller on DE1-SoC (1280×1024 @ 60 Hz)</h3>
+        <p>Designed a VGA controller with PLL-generated 108 MHz pixel clock, VESA-compliant HSYNC/VSYNC timing, and switch-controlled movable color squares. Verified live on hardware.</p>
+        <div class="tags"><span>VHDL</span><span>FPGA</span><span>VGA</span><span>PLL</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Power Electronics</span>
+        <h3>PV Panel MPPT — Boost Converter (LTSPICE)</h3>
+        <p>Simulated a switching boost converter for PV panel MPPT. Analyzed inductor current ripple, output voltage regulation, switching losses, and converter efficiency across load conditions.</p>
+        <div class="tags"><span>LTSPICE</span><span>MPPT</span><span>Boost Converter</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Electrical Engineering</span>
+        <h3>Analog Lab — Comparator, Schmitt Trigger &amp; Oscillator</h3>
+        <p>Designed and tested three fundamental analog circuits: comparator with LED indicator, Schmitt trigger with hysteresis, and square wave oscillator. Verified via simulation and hardware.</p>
+        <div class="tags"><span>Analog</span><span>Op-Amp</span><span>Multisim</span><span>Oscillator</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Electronics Design</span>
+        <h3>Mouth Massager — Electronic Hardware Schematic</h3>
+        <p>Full electronic schematic design for a portable mouth massager — power delivery, motor driver, control logic, footprint layout, and manufacturability considerations.</p>
+        <div class="tags"><span>Schematic</span><span>PCB Design</span><span>Hardware</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Electrical Engineering</span>
+        <h3>Power Systems — Transformers &amp; Alternators (ENG224)</h3>
+        <p>Solved comprehensive power systems problems including transformer equivalent circuits, open/short-circuit tests, three-phase alternator line current and excitation voltage calculations.</p>
+        <div class="tags"><span>Power Systems</span><span>Transformers</span><span>Alternators</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Power Electronics</span>
+        <h3>GaN Devices &amp; MOSFET Capacitance Analysis</h3>
+        <p>Analyzed wide-bandgap devices (GaN, SiC) vs. silicon MOSFETs — reverse conduction, absence of body diodes, non-linear capacitance modeling, and switching loss calculations.</p>
+        <div class="tags"><span>GaN</span><span>SiC</span><span>MOSFET</span><span>Power Devices</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">RF Engineering</span>
+        <h3>RF Antenna System — Link Budget &amp; Power Analysis</h3>
+        <p>Complete RF link budget including transmit power, cable losses, antenna gains, path loss, and receiver power delivery. Includes dBW/dBm conversions and system signal flow.</p>
+        <div class="tags"><span>RF Design</span><span>Link Budget</span><span>Antenna</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Electrical Engineering</span>
+        <h3>Series &amp; Parallel Circuit Analysis (EECS2200)</h3>
+        <p>Solved equivalent resistance for complex networks, voltage/current divider circuits, Thevenin equivalents, and power dissipation analysis.</p>
+        <div class="tags"><span>Circuit Analysis</span><span>Thevenin</span><span>Networks</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">RF Engineering</span>
+        <h3>Transmission Lines &amp; S-Parameters — Final Exam</h3>
+        <p>Solved advanced transmission line problems including open-circuited line capacitance approximation, matching network design using the Smith chart, and S-parameter derivation for transformers.</p>
+        <div class="tags"><span>Transmission Lines</span><span>S-Parameters</span><span>Smith Chart</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Communications</span>
+        <h3>Underwater GPS Communication System Design</h3>
+        <p>Designed a theoretical communication system for GPS triangulation of unmanned aquatic vehicles up to 500m deep. Analyzed baud rate, bandwidth, modulation schemes, and error correction.</p>
+        <div class="tags"><span>Communications</span><span>Modulation</span><span>Underwater Systems</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Power Electronics</span>
+        <h3>Double Pulse Test — Power MOSFET Analysis</h3>
+        <p>Simulated MOSFET behavior from micrometer to nanometer scale using Silvaco. Investigated short-channel effects including threshold voltage roll-off, velocity saturation, DIBL, and breakdown.</p>
+        <div class="tags"><span>MOSFET</span><span>Silvaco</span><span>DIBL</span><span>Nanoscale</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Magnetics Design</span>
+        <h3>Magnetics Design — Inductors &amp; Transformers</h3>
+        <p>Designed and analyzed magnetic components for power converters — inductance matrices, cantilever model parameters, gapped core analysis, and core/copper loss estimation.</p>
+        <div class="tags"><span>Magnetics</span><span>Transformers</span><span>Core Loss</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Power Electronics</span>
+        <h3>Half-Bridge LLC Resonant Converter (EEE598)</h3>
+        <p>Complete LLC converter design meeting 380–420V input, 200–1000W output, >94% efficiency, and >300 W/in³ power density. Includes resonant tank design, magnetics, LTSPICE simulation, and loss analysis.</p>
+        <div class="tags"><span>LLC Converter</span><span>Resonant</span><span>ZVS</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Electrical Engineering</span>
+        <h3>Active Load with Op-Amp — PSpice Assignment</h3>
+        <p>Simulated a two-stage amplifier with coupling capacitors in PSpice. Analyzed time-domain response, gain vs. frequency, cutoff frequency (441 Hz), and attenuation (2 dB/octave).</p>
+        <div class="tags"><span>PSpice</span><span>Op-Amp</span><span>Amplifier</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Digital Logic / VLSI</span>
+        <h3>CMOS NAND Gate — Fault Modeling &amp; Test Patterns</h3>
+        <p>Analyzed fault detection in CMOS NAND gates — stuck-open, bridging, IDDQ, stuck-short, and dominance collapsing. Derived minimal two-pattern test sequences.</p>
+        <div class="tags"><span>CMOS</span><span>Fault Testing</span><span>VLSI</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Electromagnetics</span>
+        <h3>EM Wave Propagation in Lossy Media (ECE332)</h3>
+        <p>Solved EM wave propagation problems — attenuation constant, phase constant, intrinsic impedance, depth of penetration, energy density, and Poynting vector.</p>
+        <div class="tags"><span>Electromagnetics</span><span>EM Waves</span><span>Poynting Vector</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Power Systems</span>
+        <h3>Three-Phase Smart Grid Fault Analysis (PSCAD)</h3>
+        <p>Modeled a three-phase 34.5 kV network in PSCAD and analyzed single-phase-to-ground faults with and without distributed generation. Evaluated protection strategies for sensitive loads.</p>
+        <div class="tags"><span>PSCAD</span><span>Smart Grid</span><span>Fault Analysis</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Digital Electronics</span>
+        <h3>Digital Logic — Truth Tables &amp; Logic Gates</h3>
+        <p>Designed and analyzed combinational logic circuits — AND/OR/NOT gates, multi-input truth tables, and Boolean expressions for security systems, alarms, and traffic controllers.</p>
+        <div class="tags"><span>Digital Logic</span><span>Truth Tables</span><span>Boolean</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Civil / Construction</span>
+        <h3>Building Sketches &amp; Drawings (CPCCBC4014)</h3>
+        <p>Prepared a full set of residential construction drawings — floor plan, site plan, foundation, electrical plan, perspective sketches, and south elevation, in accordance with AS 1100.</p>
+        <div class="tags"><span>Construction Drawing</span><span>AS 1100</span><span>Civil</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Construction Management</span>
+        <h3>UK Hospital — Risk Allocation Case Study</h3>
+        <p>Critically evaluated design and cost risk under General Contracting vs. Design &amp; Build procurement, using the Royal Liverpool University Hospital and Carillion collapse as anchors.</p>
+        <div class="tags"><span>Procurement</span><span>Risk Analysis</span><span>Case Study</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Industrial Automation</span>
+        <h3>PLC Traffic Light Control System (Omron)</h3>
+        <p>Developed full ladder-logic control for a UK-standard traffic intersection — standby mode, amber flash, sensor-driven timing, emergency stop, and 100-vehicle queue cap logic.</p>
+        <div class="tags"><span>PLC</span><span>Ladder Logic</span><span>Automation</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">FPGA Design</span>
+        <h3>FPGA Traffic Light Controller (VHDL FSM)</h3>
+        <p>Designed an FPGA-based traffic light controller with FSM handling Main/Side Street green, yellow, and walk intervals. Includes programmable timing and sensor-driven extensions.</p>
+        <div class="tags"><span>VHDL</span><span>FSM</span><span>FPGA</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Robotics</span>
+        <h3>Robot Modelling — 2D &amp; 3D Forward Kinematics</h3>
+        <p>Implemented forward kinematics for 2D and 3D robotic manipulators in MATLAB. Built transformation matrices, plotted multi-link robots, and animated motion along planned straight-line trajectories.</p>
+        <div class="tags"><span>MATLAB</span><span>Robotics</span><span>Kinematics</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Computer Engineering</span>
+        <h3>Small Computer Design — ALU, Datapath &amp; Control Unit</h3>
+        <p>Designed and implemented a complete small computer — ALU with NEG operation, datapath with registers A/B/IR/MA/PC, one-hot FSM, and control logic. Tested with RISC-style programs.</p>
+        <div class="tags"><span>Computer Architecture</span><span>ALU</span><span>Datapath</span><span>LogicWorks</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">FPGA / ML Hardware</span>
+        <h3>Hardware Accelerator for Convolutional Layer (FPGA)</h3>
+        <p>Designed a hardware accelerator for the first convolutional layer of LeNet CNN using AXI Stream on PYNQ-Z2. Split data streams into biases/weights/images and implemented pixel-by-pixel convolution.</p>
+        <div class="tags"><span>FPGA</span><span>CNN</span><span>AXI Stream</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">FPGA Project</span>
+        <h3>EE2026 Mouse &amp; OLED Digital System (MODS)</h3>
+        <p>Built an interactive FPGA system reading mouse movement and clicks, driving a 96×64 PMOLED display, implementing a paint canvas with multiple shapes, and debounced pushbuttons.</p>
+        <div class="tags"><span>Verilog</span><span>Basys 3</span><span>OLED</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Embedded Systems</span>
+        <h3>Embedded Systems — NIOS II Processors &amp; DE1 Board</h3>
+        <p>Full lab series demonstrating NIOS II soft processor configuration, memory mapping, JTAG UART communication, pin assignment, and running C-based applications on DE1-SoC.</p>
+        <div class="tags"><span>NIOS II</span><span>Embedded</span><span>Quartus</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="engineering">
+        <span class="field-badge engineering">Engineering Math</span>
+        <h3>Engineering Problem Solving — Python Functions</h3>
+        <p>Implemented Python functions to solve quadratic equations, compound interest, monthly loan payments, temperature conversions, and geometry — building a toolkit for engineering math problems.</p>
+        <div class="tags"><span>Python</span><span>Functions</span><span>Numerical Methods</span></div>
+      </article>
+
+      <!-- ==================== SOFTWARE (22) ==================== -->
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Software Engineering</span>
+        <h3>AOU Connect Mobile Application (TM471 FYP)</h3>
+        <p>Full-featured mobile app for Arab Open University — LMS/SIS integration, secure login, bilingual (Arabic/English), real-time notifications, digital university card, and calendar sync.</p>
+        <div class="tags"><span>Flutter</span><span>Firebase</span><span>Mobile App</span><span>Agile</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Software / AI</span>
+        <h3>AOU Smart Bot — AI Chatbot (NLP)</h3>
+        <p>Built an intelligent university chatbot using Flask and Hugging Face Transformers. Handles natural-language queries about admissions, courses, and campus services with intent recognition.</p>
+        <div class="tags"><span>Python</span><span>NLP</span><span>Chatbot</span><span>Flask</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Computer Architecture</span>
+        <h3>RISC-V Processor Simulator (5-Stage Pipeline)</h3>
+        <p>Implemented a complete 5-stage pipelined RISC-V processor simulator in C++ with no-forwarding and forwarding variants. Handles IF/ID/EX/MEM/WB stages and generates pipeline diagrams.</p>
+        <div class="tags"><span>RISC-V</span><span>C++</span><span>Pipeline</span><span>Architecture</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Game Development</span>
+        <h3>Snowbound Secrets — Game Prototype (Unity)</h3>
+        <p>Complete 3D mystery game prototype set in snowy environment. Features Blender-modeled antique key, escape door, devil chaser activated by countdown timer, health mechanics, and dialogue triggers.</p>
+        <div class="tags"><span>Unity</span><span>C#</span><span>Blender</span><span>Game Dev</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Game Development</span>
+        <h3>Unity Roll-a-Ball Game Prototype</h3>
+        <p>Built a complete roll-a-ball game with ground plane, walls, prefab pickups, collision triggers, camera controller, score UI, and win condition.</p>
+        <div class="tags"><span>Unity</span><span>C#</span><span>Game Prototype</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Game Development</span>
+        <h3>Unity — Enemies, Pathing &amp; Timers</h3>
+        <p>Extended Unity game with enemy spawning, waypoint patrol AI, shooting mechanics, timer-based win condition, and DeathCollision script.</p>
+        <div class="tags"><span>Unity</span><span>C#</span><span>AI Pathing</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Programming Languages</span>
+        <h3>Racket AJS Interpreter (COMP712)</h3>
+        <p>Implemented an interpreter for AJS (subset of ECMAScript 2018) in Racket. Includes lexical analysis, parsing, function declarations, booleans, conditionals, recursion, and a REPL.</p>
+        <div class="tags"><span>Racket</span><span>Interpreter</span><span>Compilers</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Programming Languages</span>
+        <h3>Lex/Yacc Analyser &amp; Parser (QCIRC / QUANT)</h3>
+        <p>Built a lexical analyser and parser for a quantum-circuit expression language. Implemented tokens, grammar rules, matrix operations, Kronecker products, and evaluated register expressions.</p>
+        <div class="tags"><span>Lex</span><span>Yacc</span><span>Compilers</span><span>Quantum</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Operating Systems</span>
+        <h3>xv6 — Read-Write Semaphore &amp; lseek() System Call</h3>
+        <p>Implemented Read-Write semaphores to solve the reader/writer problem in xv6, plus a custom lseek() system call with modified offset behavior.</p>
+        <div class="tags"><span>xv6</span><span>OS</span><span>System Calls</span><span>Semaphores</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Performance Programming</span>
+        <h3>Image Processing Kernels Optimization</h3>
+        <p>Optimized two image processing kernels (rotate + flip + grayscale, and offset motion blur) for maximum cache efficiency and CPU performance.</p>
+        <div class="tags"><span>C</span><span>Optimization</span><span>Performance</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Programming / C++</span>
+        <h3>C++ Class Creation — Circle Class</h3>
+        <p>Built a complete Circle class in C++ demonstrating constructors, getters/setters, calculation methods, formatted output, input validation, and proper .h/.cpp separation.</p>
+        <div class="tags"><span>C++</span><span>OOP</span><span>Classes</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Cyber Security / C++</span>
+        <h3>C++ Vigenère Cipher — Pointers &amp; Tokenization</h3>
+        <p>Implemented a Vigenère cipher tool using C-string tokenization, dynamic pointers, and OOP design. Includes menu-driven file encryption and proper memory management.</p>
+        <div class="tags"><span>C++</span><span>Pointers</span><span>Cryptography</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Programming / C++</span>
+        <h3>C++ Books Received — Vectors &amp; Sorting</h3>
+        <p>Built a bookstore shipment tracker that loads a text file, stores book titles in a vector, sorts them, and computes hardbound/paperback percentages with error checking.</p>
+        <div class="tags"><span>C++</span><span>Vectors</span><span>Sorting</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Programming / C++</span>
+        <h3>C++ Dynamic Memory — Vehicle Array of Pointers</h3>
+        <p>Demonstrated dynamic allocation using an array of pointers-to-pointers holding Vehicle objects. Includes random tail-light generation, custom constructor/destructor messages, and cleanup.</p>
+        <div class="tags"><span>C++</span><span>Dynamic Memory</span><span>Pointers</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Programming / C</span>
+        <h3>C Programming — Modularization with Functions</h3>
+        <p>Modular C program handling multiple data types (integer, float, double, char, struct) through separate user-defined functions with proper validation.</p>
+        <div class="tags"><span>C</span><span>Modularization</span><span>Structs</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Software / Automation</span>
+        <h3>Python ERP Integration — PLEX Cloud API</h3>
+        <p>Built a Python script sending API requests to PLEX cloud ERP, extracting EDI data for customer AISIN, and generating a formatted Excel report with robust error handling.</p>
+        <div class="tags"><span>Python</span><span>ERP</span><span>REST API</span><span>Excel</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Networking / Software</span>
+        <h3>HTTP Client/Server with Sockets (C/C++)</h3>
+        <p>Implemented an HTTP client and server using TCP sockets, supporting GET and PUT methods, file transfer, status codes, and concurrent connections with graceful shutdown.</p>
+        <div class="tags"><span>Sockets</span><span>HTTP</span><span>C</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Mobile Development</span>
+        <h3>Flutter — Medication Manager App</h3>
+        <p>Built a Flutter medication tracker with login, home screen, navigation, Medication and MedicationManager classes, prescription subclass, search, and form validation.</p>
+        <div class="tags"><span>Flutter</span><span>Dart</span><span>OOP</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Programming / Python</span>
+        <h3>Python — Foundational Programming Assignments</h3>
+        <p>Implemented beginner-to-intermediate Python functions — quadratic roots, compound interest, loan payments, list statistics, temperature conversion — with doctests.</p>
+        <div class="tags"><span>Python</span><span>Functions</span><span>Algorithms</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">C Programming</span>
+        <h3>CS Attitudes Survey — C Program (SENG265)</h3>
+        <p>Developed a C program processing a student attitudes survey — reads questions and responses from stdin, computes relative frequencies, Likert scores, and category averages.</p>
+        <div class="tags"><span>C</span><span>Data Processing</span><span>Parsing</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">Racket / Functional</span>
+        <h3>Racket Programming — COMP712 Assignment</h3>
+        <p>Complete Racket assignment — efficient max-list, tail-recursive polynomials, sum-prod-pair, domino loops, custom streams, EBNF grammar, and a hand-written lexer.</p>
+        <div class="tags"><span>Racket</span><span>Functional</span><span>Streams</span><span>Lexer</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="software">
+        <span class="field-badge software">C++ / OOP</span>
+        <h3>C++ Series &amp; Parallel Circuits Assignment</h3>
+        <p>Programming assignment solving series and parallel circuit problems with user-defined classes and functions, complex number handling, and phasor analysis.</p>
+        <div class="tags"><span>C++</span><span>Circuit Analysis</span><span>OOP</span></div>
+      </article>
+
+      <!-- ==================== IT & SECURITY (10) ==================== -->
+
+      <article class="project-card reveal" data-category="it">
+        <span class="field-badge software">Cloud / DevOps</span>
+        <h3>AWS Storage Management — S3, EBS &amp; IAM</h3>
+        <p>Complete AWS storage lab — S3 buckets with versioning, IAM roles on EC2, automated EBS snapshot rotation, snapshot retention, and file recovery via S3 version history.</p>
+        <div class="tags"><span>AWS</span><span>S3</span><span>EBS</span><span>IAM</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="it">
+        <span class="field-badge software">Networking</span>
+        <h3>Wireshark HTTP Analysis Lab</h3>
+        <p>Complete Wireshark analysis of HTTP/1.0 and HTTP/1.1 — GET/response interactions, conditional GET, message formats, embedded objects, and Base64 authentication decoding.</p>
+        <div class="tags"><span>Wireshark</span><span>HTTP</span><span>Protocols</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="it">
+        <span class="field-badge software">Networking</span>
+        <h3>Wireshark DNS Analysis Lab</h3>
+        <p>Traced DNS queries and responses using Wireshark and nslookup — analyzed query types, response structures, caching behavior, and authoritative DNS hierarchies.</p>
+        <div class="tags"><span>Wireshark</span><span>DNS</span><span>nslookup</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="it">
+        <span class="field-badge software">Cyber Security</span>
+        <h3>Network Security — Ransomware Attack &amp; Defense Plan</h3>
+        <p>Analyzed ransomware vectors on a corporate network, marked vulnerability points, designed antivirus, email filtering, backup strategies, and formal security policy.</p>
+        <div class="tags"><span>Cyber Security</span><span>Ransomware</span><span>Network Defense</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="it">
+        <span class="field-badge software">Cyber Security</span>
+        <h3>HMAC vs CRC — Cryptographic Authentication</h3>
+        <p>Video demonstration and comparative analysis of HMAC vs. CRC — explaining why HMAC provides security and authentication while CRC only detects accidental errors.</p>
+        <div class="tags"><span>HMAC</span><span>CRC</span><span>Cryptography</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="it">
+        <span class="field-badge software">Cyber Security</span>
+        <h3>Use &amp; Misuse of Cryptography — Comparative Analysis</h3>
+        <p>Comparative analysis of historical and modern cryptographic standards — from Caesar cipher to AES and NSA Suite B, including SHA-1 deprecation and modern security requirements.</p>
+        <div class="tags"><span>Cryptography</span><span>AES</span><span>PGP</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="it">
+        <span class="field-badge software">Networking / Sysadmin</span>
+        <h3>Bind9 DNS Server Configuration Lab</h3>
+        <p>Configured a complete Bind9 DNS server — forward and reverse zones, SOA records, wildcard A records, MX, CNAME, PTR, verified with named-checkzone and dig.</p>
+        <div class="tags"><span>Bind9</span><span>DNS</span><span>Linux</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="it">
+        <span class="field-badge software">Industrial Automation</span>
+        <h3>Modbus RTU/TCP Practical Assessment (DIA)</h3>
+        <p>Complete practical assessment of Modbus protocols — RTU and ASCII coil reading, holding register access, TCP/IP communication, and Wireshark verification.</p>
+        <div class="tags"><span>Modbus</span><span>Automation</span><span>Wireshark</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="it">
+        <span class="field-badge software">Networking</span>
+        <h3>ITT-116 Subnetting Worksheet</h3>
+        <p>Complete subnetting exercise covering binary/decimal conversion, IP class identification, custom subnet masks, and host range calculation across multiple organizational units.</p>
+        <div class="tags"><span>Subnetting</span><span>CIDR</span><span>IPv4</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="it">
+        <span class="field-badge software">Cyber Security / Business</span>
+        <h3>Zero-Trust Cybersecurity Certification Analysis</h3>
+        <p>Comparative analysis of three Zero-Trust certification courses using a weighted decision matrix — evaluated cost, duration, coverage, and ROI for enterprise adoption.</p>
+        <div class="tags"><span>Zero Trust</span><span>Cyber Security</span><span>Certifications</span></div>
+      </article>
+
+      <!-- ==================== DATA & FINANCE (9) ==================== -->
+
+      <article class="project-card reveal" data-category="data">
+        <span class="field-badge stats">Statistics / Data</span>
+        <h3>Social Media Engagement — A/B Retention Analysis</h3>
+        <p>Analyzed 90,189 users across two posting models to test 7-day retention improvement. Used two-proportion z-tests, chi-square tests, and likelihood-ratio models.</p>
+        <div class="tags"><span>R</span><span>A/B Testing</span><span>Hypothesis Testing</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="data">
+        <span class="field-badge stats">Business Statistics</span>
+        <h3>TechnoPulse Electronics Warehouse Data Analysis</h3>
+        <p>Complete analysis of warehouse sales data — descriptive stats, cross-tabs, scatter plots, confidence intervals, and hypothesis tests on annual sales and manager gender.</p>
+        <div class="tags"><span>Excel</span><span>Statistics</span><span>Regression</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="data">
+        <span class="field-badge stats">Finance</span>
+        <h3>Stock Valuation — Dividend Discount Model</h3>
+        <p>Full company valuation using 1-stage and 2-stage DDM, CAPM cost of equity, beta estimation from historical returns, and event-study analysis of announcement impact.</p>
+        <div class="tags"><span>Finance</span><span>DDM</span><span>CAPM</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="data">
+        <span class="field-badge stats">Taxation</span>
+        <h3>South African Tax Calculation Portfolio</h3>
+        <p>Complete tax computation including employees' tax, lump sum tax on pension withdrawal, medical credits, tax directives, and capital gains tax across scenarios.</p>
+        <div class="tags"><span>Taxation</span><span>Accounting</span><span>Capital Gains</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="data">
+        <span class="field-badge stats">Engineering Economics</span>
+        <h3>Engineering Economy — Interest &amp; Cost Analysis</h3>
+        <p>Solved engineering economy problems including simple and compound interest rates, cash flow diagrams for loan repayment, and WACC calculations for construction projects.</p>
+        <div class="tags"><span>Engineering Economy</span><span>Interest</span><span>WACC</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="data">
+        <span class="field-badge stats">Data Science / Weather</span>
+        <h3>Weather Variability &amp; Anomalous Event Detection</h3>
+        <p>Analyzed weather variability and proposed anomaly-based forecast improvements for New Orleans. Compared anomaly-based vs. total-field-based weather analysis.</p>
+        <div class="tags"><span>Data Science</span><span>Anomaly Detection</span><span>Weather</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="data">
+        <span class="field-badge stats">Engineering Economics</span>
+        <h3>Engineering Economy — Present Worth Analysis</h3>
+        <p>Solved present worth, annual cost, and rate of return problems across multiple project alternatives, incorporating tax effects and depreciation.</p>
+        <div class="tags"><span>Engineering Economy</span><span>Present Worth</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="data">
+        <span class="field-badge stats">Magnetics / FEA</span>
+        <h3>AFM Pipeline — Dispersion Force Modeling</h3>
+        <p>Simulated eddy-current behavior and fringing fields in a gapped E22 ferrite core using ANSYS Maxwell 2D. Extracted inductance, resistance, and loss at 0.1/1/10 MHz.</p>
+        <div class="tags"><span>ANSYS Maxwell</span><span>FEA</span><span>Magnetics</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="data">
+        <span class="field-badge stats">Magnetics</span>
+        <h3>Transformer Synthesis — VHF Converter Analysis</h3>
+        <p>Analyzed a 75 MHz isolated DC/DC converter transformer using inductance matrix and cantilever model parameters, deriving relationships between port measurements and leakage inductances.</p>
+        <div class="tags"><span>Transformer</span><span>Cantilever Model</span><span>VHF</span></div>
+      </article>
+
+      <!-- ==================== HEALTH (20) ==================== -->
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Immunology</span>
+        <h3>Measles Immunization Case Study</h3>
+        <p>Analyzed a 2-year-old with measles and otitis media. Explained long-term immunity differences between natural infection and MMR vaccine, and calculated herd immunity thresholds (87.5% for R0=8).</p>
+        <div class="tags"><span>Immunology</span><span>Vaccination</span><span>Public Health</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Virology</span>
+        <h3>COVID Viral Variant Case Study</h3>
+        <p>Investigated why Omicron outcompeted Delta, how prior vaccination attenuates infection, and the mechanism of Remdesivir as an antiviral — including breakthrough infection analysis.</p>
+        <div class="tags"><span>Virology</span><span>COVID</span><span>Remdesivir</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Public Health</span>
+        <h3>Tuberculosis Bacterial Case Study</h3>
+        <p>Analyzed active pulmonary TB after return from India — immune clearance mechanisms, childhood BCG vaccination risk factors, and liver monitoring during Isoniazid treatment.</p>
+        <div class="tags"><span>TB</span><span>Public Health</span><span>Pharmacology</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Cardiology</span>
+        <h3>Myocardial Infarction Case Study</h3>
+        <p>Analyzed NSTEMI with LDL-C driven atherosclerosis, grapefruit–atorvastatin interaction, and salt-reduction mechanisms for hypertension with detailed clinical reasoning.</p>
+        <div class="tags"><span>Cardiology</span><span>Atherosclerosis</span><span>Pharmacology</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Respiratory</span>
+        <h3>Chronic Bronchitis Acid-Base Case Study (COPD)</h3>
+        <p>Analyzed chronic bronchitis exacerbation with respiratory acidosis, compensatory mechanisms, and oxygen delivery effects. Discussed COPD management and smoking cessation.</p>
+        <div class="tags"><span>COPD</span><span>Acid-Base</span><span>Respiratory</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Nephrology</span>
+        <h3>Acute Kidney Injury Case Study</h3>
+        <p>Analyzed AKI after NSAID use and dehydration — risk factors, pathological process of eGFR reduction, and importance of careful fluid balance management in renal recovery.</p>
+        <div class="tags"><span>Nephrology</span><span>AKI</span><span>Fluid Management</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Paediatric</span>
+        <h3>Nephrotic Syndrome Paediatric Case Study</h3>
+        <p>Analyzed paediatric nephrotic syndrome — MCD pathophysiology, albuminuria mechanism, first-line corticosteroid treatment, and nutritional guidelines.</p>
+        <div class="tags"><span>Paediatric</span><span>Nephrotic Syndrome</span><span>Corticosteroids</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Endocrinology</span>
+        <h3>Type 1 Diabetes Case Study (DKA)</h3>
+        <p>Analyzed Type 1 diabetes with DKA — coxsackievirus link to beta-cell destruction, hormonal changes causing ketoacidosis, and rationale for potassium during insulin therapy.</p>
+        <div class="tags"><span>Type 1 Diabetes</span><span>DKA</span><span>Paediatric</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Endocrinology</span>
+        <h3>Type 2 Diabetes &amp; Complications Case Study</h3>
+        <p>Analyzed Type 2 diabetes with obesity-driven insulin resistance, lifestyle changes to reduce complications, and calculated NNT for metformin based on RCT data.</p>
+        <div class="tags"><span>Type 2 Diabetes</span><span>Metformin</span><span>NNT</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Respiratory</span>
+        <h3>Asthma Paediatric Case Study</h3>
+        <p>Analyzed asthma with damp housing and dust mite triggers — immune cells in hyperimmune response, allergen reduction strategies, and NZ Asthma Guidelines management.</p>
+        <div class="tags"><span>Asthma</span><span>Paediatric</span><span>Respiratory</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Paediatric Respiratory</span>
+        <h3>Bronchiolitis Paediatric Case Study</h3>
+        <p>Analyzed bronchiolitis including risk factors, why beta-2-agonists aren't recommended for infants, and best-practice hydration strategies for paediatric respiratory infections.</p>
+        <div class="tags"><span>Bronchiolitis</span><span>RSV</span><span>Paediatric</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Epidemiology</span>
+        <h3>Rabies Epidemiology Paper</h3>
+        <p>Comprehensive epidemiological review of rabies — transmission, symptomology, PEP protocols, environmental determinants, distribution, and global health disparities.</p>
+        <div class="tags"><span>Epidemiology</span><span>Rabies</span><span>One Health</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Mental Health</span>
+        <h3>Mental Health Wellbeing Paper</h3>
+        <p>Analyzed stigma, service access, physical health, and community support impact on wellbeing. Reviewed WHO Mental Health Action Plan and NHS England framework.</p>
+        <div class="tags"><span>Mental Health</span><span>Wellbeing</span><span>Public Health</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Pharmacology</span>
+        <h3>Pharmacological Interventions for Stress Management</h3>
+        <p>Comprehensive analysis of four stress-management drug classes — anxiolytics, antidepressants, beta blockers, and sedative-hypnotics. Weighed benefits vs. dependency risks.</p>
+        <div class="tags"><span>Pharmacology</span><span>Stress Management</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Paediatric Psychiatry</span>
+        <h3>Autism Spectrum Disorder — Clinical Presentation</h3>
+        <p>Complete ASD overview — definition, types, screening parameters, diagnostic criteria, clinical presentation, behavioral and pharmacological management, and NICE guidelines.</p>
+        <div class="tags"><span>Autism</span><span>ASD</span><span>Paediatric</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Urology</span>
+        <h3>Erectile Dysfunction — Clinical Overview</h3>
+        <p>Comprehensive clinical presentation — screening parameters, diagnostic criteria, differentials, pharmacological treatments, surgical options, and lifestyle interventions.</p>
+        <div class="tags"><span>Urology</span><span>Men's Health</span><span>Pharmacology</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Sleep Medicine</span>
+        <h3>Insomnia — Clinical Presentation &amp; Management</h3>
+        <p>Complete insomnia overview — definition, types, screening tools, diagnostic criteria, differentials, CBT-based psychological treatment, and pharmacological options.</p>
+        <div class="tags"><span>Insomnia</span><span>Sleep Medicine</span><span>CBT-I</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Dermatology</span>
+        <h3>Lichen Conditions — Planus &amp; Sclerosus</h3>
+        <p>Clinical overview of lichen planus and lichen sclerosus — definitions, diagnosis, clinical presentation, differentials, and treatment including topical corticosteroids and phototherapy.</p>
+        <div class="tags"><span>Dermatology</span><span>Lichen</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Urology</span>
+        <h3>Interstitial Cystitis — Painful Bladder Syndrome</h3>
+        <p>Complete clinical overview — diagnosis, differentials, pharmacological treatments, nerve stimulation, and non-pharmacologic management including dietary changes and bladder training.</p>
+        <div class="tags"><span>Urology</span><span>Interstitial Cystitis</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="health">
+        <span class="field-badge health">Medical Sociology</span>
+        <h3>Pharmaceutical Industry — Medicalization Analysis</h3>
+        <p>Critical analysis of pharma's role in fostering both beneficial (HIV, chronic disease) and problematic (disease mongering, over-medication) medicalization, with the Sarafem/PMDD case study.</p>
+        <div class="tags"><span>Medical Sociology</span><span>Pharma Ethics</span></div>
+      </article>
+
+      <!-- ==================== WRITING & RESEARCH (17) ==================== -->
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">HRM</span>
+        <h3>Training &amp; Employee Performance — HRM Research Proposal</h3>
+        <p>Research proposal on training impact at Emirates Group — literature review, conceptual framework, hypotheses, sampling strategy (100 from 105,730), and mixed-methods approach.</p>
+        <div class="tags"><span>HRM</span><span>Research Proposal</span><span>Emirates</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">HRM</span>
+        <h3>Rewards &amp; Employee Retention — HRM Research Report</h3>
+        <p>Complete research report analyzing 132 responses on rewards and retention. Found 80.1% of variance explained by compensation, recognition, supervisor influence, and work-life balance.</p>
+        <div class="tags"><span>HRM</span><span>SPSS</span><span>Retention</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">Business Strategy</span>
+        <h3>Strategic Planning vs Tactics (UCT M6U1)</h3>
+        <p>Discussion of strategic planning's importance and the role of tactics in strategic business management. Includes group discussion synthesis and reflection on perspectives.</p>
+        <div class="tags"><span>Strategy</span><span>Business</span><span>Management</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">Business Strategy</span>
+        <h3>Strategic Evaluation &amp; Control (UCT M9U3)</h3>
+        <p>Applied four strategic evaluation and control principles (consistency, feasibility, consonance, advantage) with premise control and implementation control justifications.</p>
+        <div class="tags"><span>Strategy</span><span>Control</span><span>Business</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">Business Strategy</span>
+        <h3>Strategic Alignment (UCT M10U1)</h3>
+        <p>Assessed challenges to strategic alignment for a small business — stakeholder demands, resource allocation, and feedback mechanisms — with justifications.</p>
+        <div class="tags"><span>Strategy</span><span>Alignment</span><span>Business</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">Business Ethics</span>
+        <h3>Corporate Sustainability Responsibility (UCT M10U2)</h3>
+        <p>Analysis of corporate responsibility for sustainability, discussing how strategic planners and senior management should lead sustainable transformation.</p>
+        <div class="tags"><span>Sustainability</span><span>CSR</span><span>Business</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge health">Education</span>
+        <h3>Sri Lankan Sex &amp; Gender Development in Education</h3>
+        <p>Critical analysis of sexual and gender development in Sri Lankan education — curriculum gaps, teacher training challenges, cultural resistance, and proposed CSE reforms based on Scandinavian models.</p>
+        <div class="tags"><span>Education</span><span>Public Health</span><span>Social Science</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">Project Management</span>
+        <h3>XYZ Hypermarket Inventory Management System (WBS)</h3>
+        <p>Complete project management documentation — stakeholder analysis, WBS decomposition, project scheduling, resource allocation, and risk management plan.</p>
+        <div class="tags"><span>Project Management</span><span>WBS</span><span>Gantt</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">Social Science</span>
+        <h3>Labour in the Shadows — Case Summary</h3>
+        <p>Summary analysis of Marcello Di Cintio's investigation into Canada's Temporary Foreign Worker Program — unintended consequences of well-intentioned policies and systemic exploitation.</p>
+        <div class="tags"><span>Social Science</span><span>Labour Rights</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">English Literature</span>
+        <h3>"The Grasshopper and the Bell Cricket" — Literary Analysis</h3>
+        <p>Analysis of Kawabata's short story on the elusiveness of beauty — discussing how the grasshopper (surface allure) and bell cricket (deeper resonance) symbolize aesthetic appreciation.</p>
+        <div class="tags"><span>Literature</span><span>Literary Analysis</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">Business / Sustainability</span>
+        <h3>Corporate Sustainability — Shared Value Initiative</h3>
+        <p>Discussion on how companies like Mercy Corps, Nestlé, and Verizon transform sustainability from compliance into competitive advantage through strategic value creation.</p>
+        <div class="tags"><span>Sustainability</span><span>Business Strategy</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">Business / Finance</span>
+        <h3>UAE Tax &amp; Business Case Study — Gulf Aviation</h3>
+        <p>Business case analysis of Emirates Group — financial performance, tax obligations, employment statistics, and revenue cycle management in the context of UAE regulations.</p>
+        <div class="tags"><span>Business Case</span><span>Finance</span><span>UAE</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">HRM</span>
+        <h3>HRM — Employee Retention &amp; Turnover Analysis</h3>
+        <p>Analysis of employee turnover at ABC Private Limited — turnover data, culture climate survey findings, and recommendations for enhancing retention through rewards and supervisor influence.</p>
+        <div class="tags"><span>HRM</span><span>Retention</span><span>Turnover</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">Academic Writing</span>
+        <h3>Academic Writing — End-of-Semester Exam</h3>
+        <p>Comprehensive academic writing exam — evaluating plagiarism scenarios, explaining note-making methods (Outline, Mind Map, Charting, Sentence, Flowchart), and discussing citations.</p>
+        <div class="tags"><span>Academic Writing</span><span>Plagiarism</span><span>Citations</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">Business / Marketing</span>
+        <h3>Business Environment Analysis — AbsoluteA Case</h3>
+        <p>Business exam covering consumer vs business markets, four segmentation methods, and analysis of AbsoluteA Innovations — suppliers, segmentation, pricing strategy, and brand personality.</p>
+        <div class="tags"><span>Marketing</span><span>Business Analysis</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">Cyber Security / Business</span>
+        <h3>Zero-Trust Course Communication Strategies</h3>
+        <p>Professional communication piece justifying Zero-Trust certification course selection to stakeholders — business case, cost-benefit, and strategic alignment.</p>
+        <div class="tags"><span>Cyber Security</span><span>Business Writing</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="writing">
+        <span class="field-badge stats">Marketing</span>
+        <h3>Consumer vs Business Markets — Comparative Analysis</h3>
+        <p>Comparative analysis of consumer and business markets including definition, buyers, purchase purpose, buying behavior, purchase volume, and complexity.</p>
+        <div class="tags"><span>Marketing</span><span>Business</span></div>
+      </article>
+
+      <!-- ==================== MATHS & SCIENCE (12) ==================== -->
+
+      <article class="project-card reveal" data-category="maths">
+        <span class="field-badge science">Mathematics</span>
+        <h3>Calculus II — Full Course Tutoring</h3>
+        <p>Full-course tutoring support for Calculus II — integration techniques, sequences and series, convergence tests, and applications of integration.</p>
+        <div class="tags"><span>Calculus</span><span>Mathematics</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="maths">
+        <span class="field-badge science">Mathematics</span>
+        <h3>College Algebra — Projectile Motion Paper</h3>
+        <p>Three-page academic paper describing how to solve a projectile motion problem, explaining the algebraic approach and physical interpretation.</p>
+        <div class="tags"><span>College Algebra</span><span>Projectile Motion</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="maths">
+        <span class="field-badge science">Physics</span>
+        <h3>Physics 121 — Introductory Physics Support</h3>
+        <p>Weekly tutoring and exam support for introductory physics including quizzes and formal exams, covering mechanics, kinematics, and problem-solving methodology.</p>
+        <div class="tags"><span>Physics</span><span>Mechanics</span><span>Tutoring</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="maths">
+        <span class="field-badge science">Physics</span>
+        <h3>Motion Under Gravity &amp; Projectile Motion</h3>
+        <p>Comprehensive problem set on vertical motion under gravity, projectile motion at various angles, helicopter drop scenarios, and air resistance considerations.</p>
+        <div class="tags"><span>Physics</span><span>Kinematics</span><span>Projectile</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="maths">
+        <span class="field-badge science">Mathematics</span>
+        <h3>Calculus II — Problem Set Review</h3>
+        <p>Comprehensive problem-solving review of Calculus II topics — improper integrals, Taylor and Maclaurin series, and applications of integration.</p>
+        <div class="tags"><span>Calculus</span><span>Mathematics</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="maths">
+        <span class="field-badge science">Chemical Engineering</span>
+        <h3>MATLAB Simulation of CSTR Reactor</h3>
+        <p>Modeled and simulated a CSTR with the van der Vusse reaction using MATLAB and Simulink. Analyzed concentration dynamics, temperature, coolant dynamics, and steady-state operating points.</p>
+        <div class="tags"><span>MATLAB</span><span>Simulink</span><span>CSTR</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="maths">
+        <span class="field-badge science">Engineering Math</span>
+        <h3>Complex ODEs &amp; System Dynamics — MATLAB</h3>
+        <p>Solved complex ordinary differential equations and simulated dynamic systems using MATLAB ODE solvers and Simulink, with parameter sensitivity analysis.</p>
+        <div class="tags"><span>MATLAB</span><span>ODEs</span><span>Simulink</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="maths">
+        <span class="field-badge science">Robotics</span>
+        <h3>Robotics Forward Kinematics — MATLAB</h3>
+        <p>Implemented 2D and 3D forward kinematics for multi-link robotic manipulators, including arbitrary joint count, dynamic link addition, and animation along straight-line paths.</p>
+        <div class="tags"><span>Robotics</span><span>MATLAB</span><span>Kinematics</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="maths">
+        <span class="field-badge science">Digital Design</span>
+        <h3>Space Vector PWM &amp; RISC-V Comparator</h3>
+        <p>Implemented a space vector PWM algorithm with a RISC-V comparator, using optimized modular design for high-performance real-time control.</p>
+        <div class="tags"><span>SV-PWM</span><span>RISC-V</span><span>Digital</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="maths">
+        <span class="field-badge science">Maths</span>
+        <h3>Quadratic &amp; Financial Function Programming</h3>
+        <p>Built a Python function toolkit — quadratic roots, compound interest, monthly loan payments — with doctests and modular code design.</p>
+        <div class="tags"><span>Python</span><span>Mathematics</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="maths">
+        <span class="field-badge science">Maths</span>
+        <h3>Circle &amp; Cylinder Geometry Programming</h3>
+        <p>Implemented Python functions to compute the area of a circle and volume of a cylinder given radius, diameter, and length — demonstrating geometric calculations in code.</p>
+        <div class="tags"><span>Python</span><span>Geometry</span></div>
+      </article>
+
+      <article class="project-card reveal" data-category="maths">
+        <span class="field-badge science">Science</span>
+        <h3>Temperature Conversion Programming</h3>
+        <p>Python functions converting between Fahrenheit and Centigrade, with error handling and doctests, as part of a broader foundational programming toolkit.</p>
+        <div class="tags"><span>Python</span><span>Conversion</span></div>
+      </article>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="projects-footer reveal">
+      <a href="index.html#contact" class="btn btn-primary">Get a Free Quote for Your Project →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container">
-    <p>© <span id="year"></span> GuideMeGenius — Best Assignment Writing Service.</p>
+    <p>© <span id="year"></span> GuideMeGenius — Best Assignment Writing Service. All rights reserved.</p>
+    <p class="footer-links">
+      <a href="index.html">Home</a> · <a href="index.html#why">Why Us</a> ·
+      <a href="index.html#services">Services</a> · <a href="index.html#contact">Contact</a>
+    </p>
   </div>
 </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/94775522388?text=Hi%2C%20I%20need%20help%20with%20my%20assignment"
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.3z"/>
+  </svg>
+</a>
+
+<script src="script.js?v=5" defer></script>
 </body>
 </html>

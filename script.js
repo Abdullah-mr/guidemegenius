@@ -63,10 +63,55 @@ if (form) {
 // ---- 3. Auto-update Footer Year ----
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
-// ---- 4. Project Filter Tabs ----
+// ---- 4. Project + Service Filter Tabs ----
 document.addEventListener('DOMContentLoaded', () => {
-  const tabs = document.querySelectorAll('.project-tabs .tab');
-  const cards = document.querySelectorAll('.project-card');
+  // Projects filter
+  const projectTabs = document.querySelectorAll('.project-tabs .tab');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  projectTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const filter = tab.dataset.filter;
+
+      projectTabs.forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      projectCards.forEach((card) => {
+        const match = filter === 'all' || card.dataset.category === filter;
+        card.classList.toggle('is-hidden', !match);
+        if (match) {
+          card.classList.remove('visible');
+          requestAnimationFrame(() => card.classList.add('visible'));
+        }
+      });
+    });
+  });
+
+  // Services filter — only the tabs inside the services section
+  const servicesSection = document.querySelector('#services');
+  if (!servicesSection) return;
+
+  const serviceTabs = servicesSection.querySelectorAll('.project-tabs .tab');
+  const serviceCards = servicesSection.querySelectorAll('.service-card');
+
+  serviceTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const filter = tab.dataset.filter;
+
+      serviceTabs.forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      serviceCards.forEach((card) => {
+        const match = filter === 'all' || card.dataset.category === filter;
+        card.classList.toggle('is-hidden', !match);
+        if (match) {
+          card.classList.remove('visible');
+          requestAnimationFrame(() => card.classList.add('visible'));
+        }
+      });
+    });
+  });
+});
 
   if (!tabs.length || !cards.length) return;
 

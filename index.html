@@ -98,7 +98,6 @@
   ]
 }
 </script>
-<meta name="google-site-verification" content="gtaD3mdYZs0hHxdOrLt-2NpBVmyhwxFUaJxVpteE35k" />
 </head>
 
 <body>
@@ -346,63 +345,211 @@
 <section id="services" class="section">
   <div class="container">
     <header class="section-head reveal">
-      <h2>Our Services</h2>
-      <p>All types of engineering, IT, statistics, health sciences, and academic writing.</p>
+      <h2>Our <span class="accent">Services</span></h2>
+      <p>Comprehensive academic and technical support across engineering, programming, data science, health, and research.</p>
     </header>
 
-    <div class="grid grid-3">
-      <article class="card service reveal">
-        <h3>⚙️ Engineering (All Fields)</h3>
-        <ul>
-          <li>Electrical — MATLAB, Simulink, Multisim</li>
-          <li>Mechanical — Creo, AutoCAD, SolidWorks</li>
-          <li>Civil, Electronics, Mechatronics, Chemical</li>
-        </ul>
-      </article>
-      <article class="card service reveal">
-        <h3>💻 Software &amp; IT</h3>
-        <ul>
-          <li>Software engineering assignments</li>
-          <li>Programming &amp; development projects</li>
-          <li>Networking &amp; Cyber Security</li>
-        </ul>
-      </article>
-      <article class="card service reveal">
-        <h3>📊 Statistics</h3>
-        <ul>
-          <li>SPSS, R, STATA, Python</li>
-          <li>EViews, Minitab, Excel</li>
-          <li>Data analysis &amp; interpretation</li>
-        </ul>
-      </article>
-      <article class="card service reveal">
-        <h3>🩺 Health Sciences</h3>
-        <ul>
-          <li>Nursing assignments</li>
-          <li>Public Health</li>
-          <li>Medicine &amp; clinical reports</li>
-        </ul>
-      </article>
-      <article class="card service reveal">
-        <h3>📝 Academic Writing</h3>
-        <ul>
-          <li>Research writing</li>
-          <li>Report writing</li>
-          <li>Essays &amp; literature reviews</li>
-        </ul>
-      </article>
-      <article class="card service reveal">
-        <h3>🛠 Development Assignments</h3>
-        <ul>
-          <li>Web &amp; app development</li>
-          <li>Database &amp; backend projects</li>
-          <li>Source code + documentation</li>
-        </ul>
-      </article>
+    <!-- Filter tabs -->
+    <div class="project-tabs reveal" role="tablist" aria-label="Filter services by category">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="engineering">Engineering</button>
+      <button class="tab" data-filter="programming">Programming</button>
+      <button class="tab" data-filter="data">Data &amp; Statistics</button>
+      <button class="tab" data-filter="maths">Mathematics</button>
+      <button class="tab" data-filter="it">IT &amp; Cyber</button>
+      <button class="tab" data-filter="health">Health &amp; Research</button>
     </div>
+
+    <div class="grid grid-3 services-grid">
+
+      <!-- 1. Electrical & Electronics Engineering -->
+      <article class="service-card reveal" data-category="engineering">
+        <div class="service-icon">⚡</div>
+        <h3>Electrical &amp; Electronics Engineering</h3>
+        <ul>
+          <li>Electrical circuit analysis</li>
+          <li>Electronics &amp; Digital electronics</li>
+          <li>Digital logic &amp; system design</li>
+          <li>VHDL, Verilog, SystemVerilog</li>
+          <li>FPGA design &amp; HDL simulation</li>
+          <li>Microprocessors &amp; Embedded systems</li>
+          <li>Control systems &amp; Signal processing</li>
+          <li>Power systems &amp; Electrical machines</li>
+          <li>Power electronics &amp; Communication systems</li>
+        </ul>
+      </article>
+
+      <!-- 2. Programming & Software Engineering -->
+      <article class="service-card reveal" data-category="programming">
+        <div class="service-icon">💻</div>
+        <h3>Programming &amp; Software Engineering</h3>
+        <ul>
+          <li>Python, C, C++, Java</li>
+          <li>MATLAB programming</li>
+          <li>Object-oriented programming</li>
+          <li>Algorithms &amp; Data structures</li>
+          <li>Software engineering projects</li>
+          <li>Debugging &amp; Code fixes</li>
+          <li>Database projects</li>
+          <li>Web/software development</li>
+        </ul>
+      </article>
+
+      <!-- 3. Data Science & Data Analysis -->
+      <article class="service-card reveal" data-category="data">
+        <div class="service-icon">📊</div>
+        <h3>Data Science &amp; Data Analysis</h3>
+        <ul>
+          <li>Data analysis &amp; Statistical analysis</li>
+          <li>Data visualization</li>
+          <li>Regression &amp; Hypothesis testing</li>
+          <li>ANOVA &amp; Correlation</li>
+          <li>Predictive analysis</li>
+          <li>Statistical reporting</li>
+          <li>Research data analysis</li>
+        </ul>
+      </article>
+
+      <!-- 4. Mathematics & Statistics -->
+      <article class="service-card reveal" data-category="maths">
+        <div class="service-icon">🧮</div>
+        <h3>Mathematics &amp; Statistics</h3>
+        <ul>
+          <li>Engineering mathematics</li>
+          <li>Pure &amp; Applied mathematics</li>
+          <li>Calculus &amp; Linear algebra</li>
+          <li>Differential equations</li>
+          <li>Probability &amp; Statistics</li>
+          <li>Numerical methods</li>
+          <li>Mathematical modelling</li>
+        </ul>
+      </article>
+
+      <!-- 5. Civil Engineering -->
+      <article class="service-card reveal" data-category="engineering">
+        <div class="service-icon">🏗️</div>
+        <h3>Civil Engineering</h3>
+        <ul>
+          <li>Structural &amp; Construction engineering</li>
+          <li>Geotechnical &amp; Transportation engineering</li>
+          <li>Environmental engineering</li>
+          <li>Hydraulics &amp; Hydrology</li>
+          <li>Construction management</li>
+          <li>Site investigation</li>
+          <li>Engineering design &amp; Technical reports</li>
+          <li>CAD/design-related coursework</li>
+        </ul>
+      </article>
+
+      <!-- 6. Mechanical Engineering -->
+      <article class="service-card reveal" data-category="engineering">
+        <div class="service-icon">⚙️</div>
+        <h3>Mechanical Engineering</h3>
+        <ul>
+          <li>Engineering mechanics</li>
+          <li>Thermodynamics &amp; Fluid mechanics</li>
+          <li>Heat transfer</li>
+          <li>Machine design &amp; Manufacturing</li>
+          <li>CAD &amp; Mechanical simulations</li>
+          <li>Engineering calculations</li>
+          <li>Technical reports</li>
+        </ul>
+      </article>
+
+      <!-- 7. Computer Science / IT -->
+      <article class="service-card reveal" data-category="it">
+        <div class="service-icon">🖥️</div>
+        <h3>Computer Science &amp; IT</h3>
+        <ul>
+          <li>Programming &amp; Software engineering</li>
+          <li>Databases &amp; Data structures</li>
+          <li>Algorithms</li>
+          <li>Computer networks</li>
+          <li>Cloud computing</li>
+          <li>Cybersecurity</li>
+          <li>Web development</li>
+          <li>Systems analysis &amp; IT projects</li>
+        </ul>
+      </article>
+
+      <!-- 8. Cybersecurity -->
+      <article class="service-card reveal" data-category="it">
+        <div class="service-icon">🔐</div>
+        <h3>Cybersecurity</h3>
+        <ul>
+          <li>Network security</li>
+          <li>Cybersecurity fundamentals</li>
+          <li>Ethical hacking concepts</li>
+          <li>Penetration-testing coursework</li>
+          <li>Security analysis &amp; Cryptography</li>
+          <li>Cloud security</li>
+          <li>Cybersecurity projects &amp; Security reports</li>
+        </ul>
+      </article>
+
+      <!-- 9. Networking & Cloud -->
+      <article class="service-card reveal" data-category="it">
+        <div class="service-icon">☁️</div>
+        <h3>Networking &amp; Cloud</h3>
+        <ul>
+          <li>Computer networking</li>
+          <li>Network configuration</li>
+          <li>AWS &amp; Cloud computing</li>
+          <li>VPC/Network architecture</li>
+          <li>Cloud security</li>
+          <li>Network security</li>
+          <li>Infrastructure-related assignments</li>
+        </ul>
+      </article>
+
+      <!-- 10. Public Health & Healthcare -->
+      <article class="service-card reveal" data-category="health">
+        <div class="service-icon">🩺</div>
+        <h3>Public Health &amp; Healthcare</h3>
+        <ul>
+          <li>Public health &amp; Epidemiology</li>
+          <li>Biostatistics</li>
+          <li>Healthcare research</li>
+          <li>Health data analysis</li>
+          <li>Public-health reports</li>
+          <li>Research methodology</li>
+          <li>Statistical analysis</li>
+        </ul>
+      </article>
+
+      <!-- 11. Research & Academic Work -->
+      <article class="service-card reveal" data-category="health">
+        <div class="service-icon">📝</div>
+        <h3>Research &amp; Academic Work</h3>
+        <ul>
+          <li>Research projects</li>
+          <li>Literature reviews</li>
+          <li>Technical reports</li>
+          <li>Research methodology</li>
+          <li>Data analysis</li>
+          <li>Case studies &amp; Engineering reports</li>
+          <li>Project documentation &amp; Presentations</li>
+          <li>Dissertation/thesis support</li>
+        </ul>
+      </article>
+
+    </div>
+
+    <!-- Tools & Software strip -->
+    <div class="tools-strip reveal">
+      <h3>Tools &amp; Software We Cover</h3>
+      <div class="tool-tags">
+        <span>MATLAB</span><span>Simulink</span><span>Python</span>
+        <span>R / RStudio</span><span>SPSS</span><span>SAS</span>
+        <span>Microsoft Excel</span><span>PSpice</span><span>Multisim</span>
+        <span>VHDL</span><span>Verilog</span><span>SystemVerilog</span>
+        <span>FPGA / HDL Tools</span><span>CAD &amp; Engineering Simulation</span>
+        <span>AWS</span>
+      </div>
+    </div>
+
   </div>
 </section>
-
 <!-- ============ HOW IT WORKS ============ -->
 <section id="how" class="section alt">
   <div class="container">

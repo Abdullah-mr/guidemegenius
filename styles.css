@@ -971,4 +971,27 @@ ul { list-style: none; }
    ========================================================= */
 html {
   scroll-behavior: smooth;
+}/* =========================================================
+   SERVICE CARD — Small footer links to dedicated pages
+   ========================================================= */
+.services-grid .service-card .card-links {
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.services-grid .service-card .card-links a {
+  color: var(--blue);
+  transition: color .2s, transform .2s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.services-grid .service-card .card-links a:hover {
+  color: var(--green-dk);
 }

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a2c5c" />
+
+  <!-- SEO -->
+  <title>Top 5 Java Errors Students Make (And How to Fix Them) | GuideMeGenius</title>
+  <meta name="description" content="Stuck on a Java error? Learn the top 5 mistakes students make in Java assignments — NullPointerException, ArrayIndexOutOfBounds, missing return statements, and more." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://guidemegenius.com/blog-java-errors.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Top 5 Java Errors Students Make | GuideMeGenius" />
+  <meta property="og:description" content="Learn why your Java code is failing and how to fix it." />
+  <meta property="og:url" content="https://guidemegenius.com/blog-java-errors.html" />
+  <meta property="og:image" content="https://guidemegenius.com/images/og-cover.jpg" />
+
+  <!-- Favicon & Fonts -->
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=5" />
+  
+  <style>
+    /* Custom styles just for the blog article */
+    .article-content {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 16.5px;
+      line-height: 1.8;
+      color: var(--text);
+    }
+    .article-content h2 {
+      font-size: 26px;
+      color: var(--navy);
+      margin: 40px 0 15px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+    }
+    .article-content h3 { font-size: 20px; color: var(--navy); margin: 25px 0 10px; }
+    .article-content p { margin-bottom: 20px; }
+    .article-content pre {
+      background: #0d1117;
+      color: #c9d1d9;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin-bottom: 20px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+    .article-content ul { margin-bottom: 20px; padding-left: 20px; }
+    .article-content li { margin-bottom: 10px; }
+    .article-content strong { color: var(--navy); }
+    .article-meta { color: var(--muted); font-size: 14px; margin-bottom: 30px; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo" aria-label="GuideMeGenius Home">
+      <img src="images/logo.png" alt="GuideMeGenius — Academic Help Services" class="logo-img" />
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#contact" class="btn btn-sm">Get a Quote</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ARTICLE HERO -->
+<section class="projects-hero">
+  <div class="container">
+    <span class="badge">☕ Java Programming</span>
+    <h1>Top 5 Java Errors Students Make (And How to Fix Them)</h1>
+    <p class="hero-sub">Struggling to compile your assignment? Here are the most common mistakes we see every day, and exactly how to solve them.</p>
+    <p class="article-meta">Published: October 2026 · Reading time: 5 mins</p>
+  </div>
+</section>
+
+<!-- ARTICLE BODY -->
+<section class="section">
+  <div class="container">
+    <div class="article-content">
+      <p>If you're taking a Java programming course, you've probably stared at your IDE wondering why your code won't compile. Java is a strict language — it demands perfection down to the semicolon.</p>
+      
+      <p>After helping students with over 2,000 assignments, we've noticed these five errors appear again and again. Here is what they mean and how to fix them.</p>
+
+      <h2>1. NullPointerException (The #1 Java Killer)</h2>
+      <p>This is the most common error in Java. It happens when you try to call a method or access a variable on an object that hasn't been initialized yet (it points to <code>null</code>).</p>
+      
+      <h3>The Error:</h3>
+      <pre>Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "name" is null</pre>
+
+      <h3>How to fix it:</h3>
+      <p>Before you use a variable, make sure it actually holds data. If it comes from user input or an array, check if it's null first.</p>
+      <pre>// Wrong
+String name = null;
+System.out.println(name.length());
+
+// Correct
+String name = null;
+if (name != null) {
+    System.out.println(name.length());
+} else {
+    System.out.println("Name is missing!");
+}</pre>
+
+      <h2>2. ArrayIndexOutOfBoundsException</h2>
+      <p>Arrays in Java are zero-indexed. This means if you create an array of size 5, the valid indices are 0, 1, 2, 3, and 4. Trying to access index 5 will crash your program.</p>
+
+      <h3>The Error:</h3>
+      <pre>Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5</pre>
+
+      <h3>How to fix it:</h3>
+      <p>Always use <code>.length</code> in your loops instead of hardcoding the number.</p>
+      <pre>int[] numbers = {10, 20, 30, 40, 50};
+
+// Wrong
+for (int i = 0; i <= 5; i++) { ... }
+
+// Correct
+for (int i = 0; i < numbers.length; i++) {
+    System.out.println(numbers[i]);
+}</pre>
+
+      <h2>3. Missing Return Statement</h2>
+      <p>If you declare a method that is supposed to return a value (like an <code>int</code> or a <code>String</code>), every possible path in your code must return something.</p>
+
+      <h3>The Error:</h3>
+      <pre>error: missing return statement</pre>
+
+      <h3>How to fix it:</h3>
+      <p>Make sure there is a <code>return</code> statement at the end of the method, even if you use <code>if/else</code> blocks earlier.</p>
+      <pre>// Wrong
+public int checkGrade(int score) {
+    if (score >= 50) {
+        return 1;
+    }
+    // If score is < 50, it reaches here and returns nothing!
+}
+
+// Correct
+public int checkGrade(int score) {
+    if (score >= 50) {
+        return 1;
+    }
+    return 0; // Fallback return
+}</pre>
+
+      <h2>4. Using == instead of .equals() for Strings</h2>
+      <p>In Java, <code>==</code> checks if two variables point to the exact same memory location. <code>.equals()</code> checks if the actual text is identical. For beginners, this causes massive headaches when comparing passwords or names.</p>
+      
+      <h3>How to fix it:</h3>
+      <pre>String input = "admin";
+String target = "admin";
+
+// Wrong (might return false due to memory allocation)
+if (input == target) { ... }
+
+// Correct
+if (input.equals(target)) { ... }</pre>
+
+      <h2>5. Forgetting to Import Packages</h2>
+      <p>Java doesn't load everything at once. If you want to use a <code>Scanner</code> for input or an <code>ArrayList</code>, you have to import them at the very top of your file.</p>
+
+      <h3>The Error:</h3>
+      <pre>error: cannot find symbol</pre>
+
+      <h3>How to fix it:</h3>
+      <p>Add the import statements before your class definition.</p>
+      <pre>import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Main { ... }</pre>
+
+      <hr style="margin: 40px 0; border: 0; border-top: 1px solid var(--border);">
+      
+      <h2>Still Stuck on Your Java Assignment?</h2>
+      <p>Sometimes the error is buried deep in your logic, or your deadline is in 12 hours and you just can't find the bug. That's exactly what we're here for.</p>
+      <p>Our team includes real Java developers who can debug your code, write clean implementations, or explain the concepts to you. If you need help, send us a message on WhatsApp.</p>
+      
+      <a href="https://wa.me/94775522388?text=Hi%2C%20I%20read%20your%20Java%20blog%20post%20and%20I%20need%20help%20with%20my%20assignment" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        💬 Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> GuideMeGenius — Best Assignment Writing Service. All rights reserved.</p>
+    <p class="footer-links">
+      <a href="index.html">Home</a> · <a href="projects.html">Projects</a> · <a href="blog.html">Blog</a> ·
+      <a href="index.html#services">Services</a> · <a href="index.html#contact">Contact</a>
+    </p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/94775522388?text=Hi%2C%20I%20need%20help%20with%20my%20assignment" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.3z"/></svg>
+</a>
+
+<script src="script.js?v=5" defer></script>
+</body>
+</html>

@@ -34,6 +34,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+    <url><loc>https://guidemegenius.com/python-pandas-tutoring.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guidemegenius.com/python-django-tutoring.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guidemegenius.com/react-js-tutoring.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guidemegenius.com/node-js-tutoring.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guidemegenius.com/sql-database-tutoring.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guidemegenius.com/c-plus-plus-tutoring.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guidemegenius.com/matlab-simulink-tutoring.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guidemegenius.com/r-programming-tutoring.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guidemegenius.com/aws-cloud-tutoring.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guidemegenius.com/wireshark-lab-tutoring.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url>
     <loc>https://guidemegenius.com/python-homework-help.html</loc>
     <changefreq>monthly</changefreq>

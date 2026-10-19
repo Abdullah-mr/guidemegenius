@@ -81,6 +81,16 @@
   </url>
 
   <!-- Blog Posts -->
+    <url>
+    <loc>https://guidemegenius.com/blog-nursing-care-plan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guidemegenius.com/blog-vhdl-fpga-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://guidemegenius.com/blog-java-errors.html</loc>
     <changefreq>monthly</changefreq>

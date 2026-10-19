@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a2c5c" />
+
+  <title>VHDL & FPGA Project Help: How to Build an ALU | GuideMeGenius</title>
+  <meta name="description" content="Struggling with your VHDL or FPGA assignment? Learn how to design a basic ALU, understand testbenches, and fix common syntax errors. Get 1-on-1 debugging help." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://guidemegenius.com/blog-vhdl-fpga-guide.html" />
+  
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="VHDL & FPGA Project Help: How to Build an ALU" />
+  <meta property="og:description" content="Learn how to design a basic ALU in VHDL and fix common errors." />
+  <meta property="og:url" content="https://guidemegenius.com/blog-vhdl-fpga-guide.html" />
+  <meta property="og:image" content="https://guidemegenius.com/images/og-cover.jpg" />
+
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=5" />
+  
+  <style>
+    .article-content { max-width: 800px; margin: 0 auto; font-size: 16.5px; line-height: 1.8; color: var(--text); }
+    .article-content h2 { font-size: 26px; color: var(--navy); margin: 40px 0 15px; border-bottom: 2px solid var(--border); padding-bottom: 8px; }
+    .article-content h3 { font-size: 20px; color: var(--navy); margin: 25px 0 10px; }
+    .article-content p { margin-bottom: 20px; }
+    .article-content pre { background: #0d1117; color: #c9d1d9; padding: 16px; border-radius: 8px; overflow-x: auto; margin-bottom: 20px; font-family: monospace; font-size: 14px; }
+    .article-content ul { margin-bottom: 20px; padding-left: 20px; }
+    .article-content li { margin-bottom: 10px; }
+    .article-content strong { color: var(--navy); }
+    .article-meta { color: var(--muted); font-size: 14px; margin-bottom: 30px; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="GuideMeGenius" class="logo-img" /></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="job-support.html">Job Support</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#contact" class="btn btn-sm">Book a Session</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="projects-hero">
+  <div class="container">
+    <span class="badge">⚡ Electrical Engineering</span>
+    <h1>VHDL & FPGA Project Help: How to Build an ALU</h1>
+    <p class="hero-sub">Tired of ModelSim errors? Here is a step-by-step breakdown of designing a basic ALU and fixing the most common VHDL mistakes.</p>
+    <p class="article-meta">Published: October 2026 · Reading time: 7 mins</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="article-content">
+      <p>If you are taking an FPGA or Digital Logic course, you will inevitably be asked to build an ALU (Arithmetic Logic Unit). It is the classic rite of passage for electrical engineering students.</p>
+      
+      <p>In our 1-on-1 tutoring sessions, we've helped students debug everything from <strong>8-bit signed adders</strong> to <strong>VGA display controllers</strong>. Here are the most common reasons your VHDL code isn't compiling or working on the board.</p>
+
+      <h2>1. Combinational vs. Sequential Logic</h2>
+      <p>The biggest mistake beginners make is mixing combinational logic (like adders and multiplexers) with sequential logic (like flip-flops) in the same process block. Use <code>process(all)</code> for combinational circuits and <code>process(clk)</code> for sequential circuits. Never try to do both in one block.</p>
+
+      <h2>2. The Sensitivity List</h2>
+      <p>If your simulation runs but the output never changes, your sensitivity list is probably wrong.</p>
+      <pre>-- Wrong (Synthesis might fail or simulate incorrectly)
+process(a, b)
+begin
+  y &lt;= a and b;
+end process;
+
+-- Correct (VHDL-2008)
+process(all)
+begin
+  y &lt;= a and b;
+end process;</pre>
+
+      <h2>3. Missing Testbenches</h2>
+      <p>Professors love testbenches because they prove you actually simulated your design. A testbench is a separate VHDL file that generates input signals (stimulus) and checks if the output matches what you expect.</p>
+      <p>If your assignment says "verify in ModelSim," it means you must write a testbench. You cannot just compile the main file.</p>
+
+      <h2>4. Board Pin Assignments</h2>
+      <p>Your code works perfectly in ModelSim, but when you load it onto the DE1-SoC or Basys 3 board, nothing happens. This is almost always because you forgot to assign the pins in Quartus/Vivado. You have to map your VHDL inputs and outputs to the physical switches and LEDs on the board.</p>
+
+      <hr style="margin: 40px 0; border: 0; border-top: 1px solid var(--border);">
+      
+      <h2>Still Stuck on Your FPGA Assignment?</h2>
+      <p>VHDL is unforgiving. One missing semicolon or a tiny typo can break the entire synthesis. If you have spent hours staring at ModelSim waveforms and still can't find the bug, you don't have to do it alone.</p>
+      
+      <p>We offer <strong>live 1-on-1 debugging sessions</strong>. You share your screen, we look at your code together, and we teach you how to fix the error. We've tutored students through ALUs, RISC-V processors, and VGA controllers.</p>
+      
+      <a href="https://wa.me/94775522388?text=Hi%2C%20I%20read%20your%20VHDL%20blog%20post%20and%20I%20need%20help%20with%20my%20FPGA%20project" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        💬 Get FPGA Tutoring on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> GuideMeGenius — 1-on-1 Tutoring & Job Support.</p>
+    <p class="footer-links">
+      <a href="index.html">Home</a> · <a href="job-support.html">Job Support</a> · <a href="pricing.html">Pricing</a> · <a href="blog.html">Blog</a> · <a href="index.html#contact">Contact</a>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js?v=5" defer></script>
+</body>
+</html>

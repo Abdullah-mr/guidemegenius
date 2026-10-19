@@ -36,26 +36,51 @@
   <link rel="stylesheet" href="styles.css?v=5" />
 
   <!-- ============ JSON-LD SCHEMA ============ -->
-  <script type="application/ld+json">
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": "EducationalOrganization",
     "name": "GuideMeGenius",
     "description": "Live 1-on-1 academic tutoring and job support for engineering, software, cyber security, statistics, and nursing.",
     "url": "https://guidemegenius.com/",
     "telephone": "+94775522388",
-    "priceRange": "$$",
+    "priceRange": "$",
     "areaServed": "Worldwide",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
       "reviewCount": "250"
     },
-    "makesOffer": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "1-on-1 Tutoring" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Job Support & Code Review" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interview Preparation" } }
-    ]
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Tutoring Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "1-on-1 Academic Tutoring",
+            "description": "Live screen-share sessions taught on your exact syllabus and assignment."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Job Support & Code Review",
+            "description": "Live debugging, code reviews, and architecture help for working professionals."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Interview Preparation",
+            "description": "Mock technical interviews, LeetCode prep, and system design coaching."
+          }
+        }
+      ]
+    }
   }
   </script>
 </head>

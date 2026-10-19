@@ -8,6 +8,16 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://guidemegenius.com/job-support.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://guidemegenius.com/pricing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://guidemegenius.com/projects.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -18,7 +28,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Batch 1 Service Pages -->
+  <!-- Service Pages -->
   <url>
     <loc>https://guidemegenius.com/python-homework-help.html</loc>
     <changefreq>monthly</changefreq>
@@ -44,8 +54,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Batch 2 Service Pages -->
   <url>
     <loc>https://guidemegenius.com/electrical-engineering-assignment-help.html</loc>
     <changefreq>monthly</changefreq>

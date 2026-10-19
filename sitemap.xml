@@ -97,6 +97,16 @@
 
   <!-- Blog Posts -->
     <url>
+    <loc>https://guidemegenius.com/blog-cisco-ccna-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guidemegenius.com/blog-spss-statistics-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+    <url>
     <loc>https://guidemegenius.com/blog-nursing-care-plan.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

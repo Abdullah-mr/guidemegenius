@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a2c5c" />
+
+  <!-- SEO -->
+  <title>Tutoring Pricing & Packages | From $10/hr — GuideMeGenius</title>
+  <meta name="description" content="Transparent 1-on-1 tutoring pricing. Starting at $10/hr. Student discounts and package deals available (5, 10, 20 sessions). No hidden fees." />
+  <meta name="keywords" content="tutoring prices, affordable tutoring, tutoring packages, student discounts, online tutor cost" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://guidemegenius.com/pricing.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tutoring Pricing & Packages | GuideMeGenius" />
+  <meta property="og:description" content="Transparent 1-on-1 tutoring pricing. Starting at $10/hr." />
+  <meta property="og:url" content="https://guidemegenius.com/pricing.html" />
+  <meta property="og:image" content="https://guidemegenius.com/images/og-cover.jpg" />
+
+  <!-- Favicon & Fonts -->
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=5" />
+  
+  <style>
+    /* Custom styles for pricing cards */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .pricing-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      transition: transform .3s;
+    }
+    .pricing-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--blue-lt);
+    }
+    .pricing-card.featured {
+      border: 2px solid var(--blue);
+      transform: scale(1.05);
+    }
+    .pricing-card.featured:hover {
+      transform: scale(1.05) translateY(-10px);
+    }
+    .pricing-tag {
+      position: absolute;
+      top: -15px; left: 50%; transform: translateX(-50%);
+      background: var(--green); color: #fff;
+      padding: 5px 15px; border-radius: 999px;
+      font-weight: 700; font-size: 13px;
+    }
+    .price {
+      font-size: 48px; font-weight: 800; color: var(--navy);
+      margin: 20px 0;
+    }
+    .price span {
+      font-size: 16px; color: var(--muted); font-weight: 400;
+    }
+    .pricing-card ul {
+      text-align: left; margin-bottom: 30px;
+    }
+    .pricing-card li {
+      padding: 10px 0; border-bottom: 1px solid var(--bg-alt);
+      color: var(--text);
+    }
+    .pricing-card li::before {
+      content: "✓"; color: var(--green); font-weight: bold; margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="GuideMeGenius" class="logo-img" /></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#services">Subjects</a></li>
+        <li><a href="index.html#contact" class="btn btn-sm">Book a Session</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="projects-hero">
+  <div class="container">
+    <span class="badge">💰 Simple, Transparent Pricing</span>
+    <h1>Tutoring Packages & Rates</h1>
+    <p class="hero-sub">
+      Premium 1-on-1 tutoring shouldn't cost $60 an hour. We start at just $10/hour. 
+      Choose a pay-as-you-go option or save with a package.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    
+    <div class="pricing-grid">
+      
+      <!-- Plan 1 -->
+      <div class="pricing-card">
+        <h3>Pay As You Go</h3>
+        <div class="price">$10<span>/hr</span></div>
+        <p style="color:var(--muted); margin-bottom: 20px;">Perfect for quick questions or one-off debugging.</p>
+        <ul>
+          <li>1-on-1 Live Session</li>
+          <li>Screen Share Support</li>
+          <li>No Commitment</li>
+          <li>Starting rate for basic subjects</li>
+        </ul>
+        <a href="https://wa.me/94775522388?text=Hi%2C%20I%20want%20to%20book%20a%20pay-as-you-go%20session" class="btn btn-primary" style="width:100%; justify-content:center;">Book Now</a>
+      </div>
+
+      <!-- Plan 2 -->
+      <div class="pricing-card featured">
+        <div class="pricing-tag">Most Popular</div>
+        <h3>5-Session Pack</h3>
+        <div class="price">$45<span>/pack</span></div>
+        <p style="color:var(--muted); margin-bottom: 20px;">Get a 10% discount when you buy 5 hours upfront.</p>
+        <ul>
+          <li>5 Hours of Tutoring</li>
+          <li>Priority Scheduling</li>
+          <li>Free 15-min Demo included</li>
+          <li>Valid for 6 months</li>
+        </ul>
+        <a href="https://wa.me/94775522388?text=Hi%2C%20I%20want%20to%20buy%20the%205-session%20pack" class="btn btn-primary" style="width:100%; justify-content:center;">Buy Package</a>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="pricing-card">
+        <h3>10-Session Pack</h3>
+        <div class="price">$80<span>/pack</span></div>
+        <p style="color:var(--muted); margin-bottom: 20px;">Best value for students needing regular weekly support.</p>
+        <ul>
+          <li>10 Hours of Tutoring</li>
+          <li>Priority Scheduling</li>
+          <li>Free 15-min Demo included</li>
+          <li>Valid for 6 months</li>
+        </ul>
+        <a href="https://wa.me/94775522388?text=Hi%2C%20I%20want%20to%20buy%20the%2010-session%20pack" class="btn btn-primary" style="width:100%; justify-content:center;">Buy Package</a>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top: 50px; color: var(--muted); font-size: 14px;">
+      <p><strong>Note on pricing:</strong> Rates start at $10/hr. Complex subjects (e.g., advanced machine learning, senior-level job support) may be priced slightly higher. We will always confirm the rate with you <em>before</em> the session begins.</p>
+      <p>Job Support and Code Review rates are quoted based on complexity.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> GuideMeGenius — 1-on-1 Tutoring & Job Support. All rights reserved.</p>
+    <p class="footer-links">
+      <a href="index.html">Home</a> · <a href="projects.html">Projects</a> · <a href="blog.html">Blog</a> ·
+      <a href="index.html#services">Subjects</a> · <a href="index.html#contact">Contact</a>
+    </p>
+  </div>
+</footer>
+
+<a href="https://wa.me/94775522388?text=Hi%2C%20I%20want%20to%20book%20a%201-on-1%20tutoring%20session" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.3z"/></svg>
+</a>
+
+<script src="script.js?v=5" defer></script>
+</body>
+</html>

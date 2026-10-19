@@ -29,6 +29,11 @@
   </url>
 
   <!-- Service Pages -->
+    <url>
+    <loc>https://guidemegenius.com/java-spring-boot-tutoring.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://guidemegenius.com/python-homework-help.html</loc>
     <changefreq>monthly</changefreq>
